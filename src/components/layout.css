@@ -87,6 +87,16 @@ a:hover {
   text-align: center;
   padding: 5rem;
 }
+@media only screen and (max-width: 600px) {
+  .intro{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+}
+
+
 
 .code {
     background-color: var(--mainGrey);
@@ -340,15 +350,20 @@ a:hover {
     font: 30px/24px "opensans-bold", sans-serif;
     letter-spacing: 1px;
     padding-bottom: 6px;
+    text-align: left;
   }
   #resume h3 {
     font: 23px/30px "opensans-bold", sans-serif;
     font-style: italic;
+    text-align: left;
   }
   #resume h4 {
     font: 30px "opensans-bold", sans-serif;
     padding-bottom: 6px;
     text-decoration: underline #3b7db9;
+  }
+
+  #resume p {
   }
   
   #resume .header-col {
