@@ -377,6 +377,11 @@ a:hover {
     padding: 0;
     text-align: left;
   }
+
+  .bars > div > div > div {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
   .bars .skills {
     margin-top: 36px;
     list-style: none;
@@ -417,5 +422,10 @@ a:hover {
     align-items: center;
     padding-bottom: 3rem !important;
   }
- 
+  @media only screen and (max-width: 900px) {
+    .bars > div > div > div {
+      display: block;
+      width: 100% !important;
+    }
+  }
  
