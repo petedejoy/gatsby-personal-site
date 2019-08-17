@@ -1,33 +1,52 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
-.header{
-    margin-bottom: 1.45rem;
-    text-align: center;
-    position: relative;
+@import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
+.header {
+  margin-bottom: 1.45rem;
+  text-align: center;
+  position: relative;
 }
 
-.list{
-    margin: 0 auto;
-    max-width: 960;
-    padding: 1.45rem 1.0875rem;
-    display: inline-block;
-    justify-items: space-between;
-    align-items: center;
-    text-align: center;
-    position: relative;
+.list {
+  margin: 0 auto;
+  max-width: 960;
+  padding: 1.45rem 1.0875rem;
+  display: inline-block;
+  justify-items: space-between;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
-.icon{
-    max-height: 2.5rem
+.icon {
+  max-height: 2.5rem;
 }
 
-.items{
-    color: var(--mainBlack);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'termina', sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 15px;
-    letter-spacing: .2em;
-    line-height:1em;
+.items {
+  color: var(--mainBlack);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "termina", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  line-height: 1em;
 }
+
+.smallMenu > div > ul {
+  display: block;
+}
+
+.smallMenu > div > ul  > li {
+    padding: .5rem !important;
+    list-style-type: none;
+}
+
+.largeMenu > ul {
+  display: flex;
+  flex: 1;
+}
+
+.largeMenu > ul > li {
+    list-style-type: none;
+    padding: 1rem;
+  }

@@ -4,6 +4,8 @@ import PropTypes from "react"
 import styles from "../css/header.module.css"
 import icon from "../../static/headericon.png"
 import Image from "gatsby"
+import ResponsiveMenu from "react-responsive-navbar"
+import { MdMenu, MdClose } from 'react-icons/md'
 
 const Header = ({ menuLinks }) => (
   <header>
@@ -14,7 +16,27 @@ const Header = ({ menuLinks }) => (
         </Link>
         <div>
           <nav>
-            <ul style={{ display: "flex", flex: 1 }}>
+            <ResponsiveMenu
+              menuOpenButton={<div><MdMenu/></div>}
+              menuCloseButton={<div><MdClose /></div>}
+              changeMenuOn="600px"
+              largeMenuClassName={styles.largeMenu}
+              smallMenuClassName={styles.smallMenu}
+              menu={
+                <ul>
+                {menuLinks.map(link => (
+                  <li
+                    key={link.name}
+                  >
+                    <Link className={styles.items} to={link.link}>
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              }
+            />
+            {/* <ul style={{ display: "flex", flex: 1 }}>
               {menuLinks.map(link => (
                 <li
                   key={link.name}
@@ -28,7 +50,7 @@ const Header = ({ menuLinks }) => (
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </nav>
         </div>
       </div>
