@@ -2,7 +2,7 @@
   width: 80vw;
   margin: 4rem auto;
   max-width: 750px;
-  padding: 2rem;
+  padding: 0.5rem;
   background: var(--mainWhite);
 }
 
@@ -24,30 +24,24 @@
   text-align: center;
 }
 .info h1 {
-  letter-spacing: 5px;
   margin-bottom: 0.5rem;
+  font: 48px/24px "leitura-news", sans-serif;
+  font-weight: 700;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.info h3 {
   text-transform: capitalize;
-  font-size: 48px;
+  font: 20px/24px "leitura-news", sans-serif;
+  text-align: center;
 }
 .info h4 {
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   text-transform: capitalize;
-  font-size: 14px;
+  font: 14px/24px "leitura-news", sans-serif;
   text-align: center;
   margin-bottom: 3rem;
 }
 .content {
   margin: 2rem 0;
-}
-.content h2 {
-  text-transform: capitalize;
-  margin-bottom: 1rem;
-}
-.content h1 {
-  text-transform: capitalize;
-  margin-bottom: 1.5rem;
-}
-.content p {
-  line-height: 1.5;
-  margin-bottom: 1rem;
 }

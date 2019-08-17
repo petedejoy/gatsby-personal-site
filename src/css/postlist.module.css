@@ -1,12 +1,20 @@
 .posts {
   padding: 4rem 0;
 }
-.posts h1 {
+
+.intro {
+  color: var(--mainBlack);
+  text-decoration: none;
+  font-family: leitura-news;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 56px;
+  letter-spacing: 0em;
+  line-height: 1.4em;
+  text-transform: none;
+  color: var(--mainBlack);
   text-align: center;
-  letter-spacing: 5px;
-  margin-bottom: 0.5rem;
-  text-transform: capitalize;
-  font-size: 48px;
+  padding: 5rem;
 }
 .posts h4 {
   letter-spacing: 5px;

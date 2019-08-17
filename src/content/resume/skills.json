@@ -1,0 +1,66 @@
+{
+  "resume": {
+    "education": [
+      {
+        "school": "Bowdoin College",
+        "degree": "Bachelor of Arts: Chemistry and Physics"
+      }
+    ],
+    "work": [
+      {
+        "company": "Astronomer",
+        "title": "Product Manager",
+        "years": "August 2017-present"
+      }
+    ],
+    "affiliations": [
+      {
+        "company": "Venture for America",
+        "title": "2017 Fellow",
+        "years": "August 2017-present"
+      }
+    ],
+    "languages": [
+      {
+        "name": "Javascript",
+        "level": "80%"
+      },
+      {
+        "name": "Python",
+        "level": "30%"
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "ReactJS",
+        "level": "80%"
+      },
+      {
+        "name": "Node",
+        "level": "60%"
+      },
+      {
+        "name": "Apollo/GraphQL",
+        "level": "70%"
+      },
+      {
+        "name": "Apache Airflow",
+        "level": "50%"
+      }
+    ],
+    "skills": [
+      {
+        "name": "SaaS Sales",
+        "level": "90%"
+      },
+      {
+        "name": "Product Management",
+        "level": "70%"
+      },
+      {
+        "name": "UI/UX Design",
+        "level": "60%"
+      }
+    ]
+  }
+}

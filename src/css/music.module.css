@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
+.guitars {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  transform: rotate(180deg)
+}
+
+.headshot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding-top: 4rem;
+}
+
+.intro {
+  color: var(--mainBlack);
+  text-decoration: none;
+  font-family: leitura-news;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 56px;
+  letter-spacing: 0em;
+  line-height: 1.4em;
+  text-transform: none;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:4rem;
+}
+
+.subtitle {
+  color: var(--mainBlack);
+  text-decoration: none;
+  font-family: leitura-news;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 0em;
+  line-height: 1.4em;
+  text-transform: none;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.icon {
+  margin: 0 0.5rem 0 0;
+}

@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "name": "The Airflow Podcast",
+      "description": "A semi-regular podcast that I produce focused on the evolution of Apache Airflow as the gold standard for data engineering. I'm responsible for booking interviews, moderating interviews, and all of the audio production and mixing. We've had some really awesome guests come on the show, including Airflow creator Maxime Beauchemin.",
+      "image": "the-airflow-podcast.png",
+      "href": "https://astronomer.io/podcast"
+    },
+    {
+      "name": "Personal Site",
+      "description": "The website you're on now! Built fully from scratch in Gatsby.js. There were 3 or 4 iterations of this thing that existed prior using different starter templates and frameworks, but along the way I became infatuated with Gatsby and really wanted to take a crack and starting from zero and building from the ground up.",
+      "image": "meta.png",
+      "href": "https://trial.astronomer.io"
+    },
+    {
+      "name": "Node JS Billing App",
+      "description": "An app built using the Express framework that takes a user's credit card information, tokenizes it on the server, and uses that token to create a new customer in our Stripe account. This was my first programming project and, although somewhat basic, it's near-and-dear to my heart.",
+      "image": "billing.png",
+      "href": "https://trial.astronomer.io"
+    },
+    {
+      "name": "Youtube Client",
+      "description": "A React clent for querying the Youtube API. Super basic, but this was a great way to lock down my React fundamentals when I was first getting started.",
+      "image": "youtube-client.png",
+      "href": "https://keen-brown-0e67db.netlify.com/"
+    }
+  ]
+}

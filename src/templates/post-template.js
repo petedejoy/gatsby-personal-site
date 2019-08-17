@@ -6,16 +6,15 @@ import Layout from "../components/layout"
 import { MDXRenderer } from "gatsby-mdx"
 
 const PostTemplate = ({ data }) => {
-  const { title, date, author, image } = data.mdx.frontmatter
+  const { title, date, author, image, description } = data.mdx.frontmatter
   const { body } = data.mdx.code
   const img = image.childImageSharp.fluid
-  console.log(img)
   return (
     <Layout>
       <section className={styles.template}>
-        <Link to="/">Home</Link>
         <div className={styles.info}>
           <h1>{title}</h1>
+          <h3>{description}</h3>
           <h4>
             <span>{author}</span>/<span>{date}</span>
           </h4>
@@ -37,6 +36,7 @@ export const query = graphql`
         slug
         date(formatString: "MMMM Do, YYYY")
         author
+        description
         image {
           childImageSharp {
             fluid {
