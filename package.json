@@ -29,7 +29,6 @@
     "gatsby-transformer-json": "^2.2.2",
     "gatsby-transformer-remark": "^2.6.9",
     "gatsby-transformer-sharp": "^2.2.3",
-    "locomotive-scroll": "^3.0.5",
     "lodash": "^4.17.15",
     "react": "^16.8.6",
     "react-columns": "^1.2.1",

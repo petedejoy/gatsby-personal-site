@@ -6,7 +6,6 @@ import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 
 export default () => {
-
     return (
       <Layout>
         <Resume/>

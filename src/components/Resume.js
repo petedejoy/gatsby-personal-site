@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import Columns from "react-columns"
 import styles from "../css/about.module.css"
 import { useStaticQuery } from "gatsby"
-import LocomotiveScroll from 'locomotive-scroll'
 
 const Resume = ({ resume }) => {
   const getResume = graphql`
@@ -26,7 +25,6 @@ const Resume = ({ resume }) => {
   const affiliations = response.allMarkdownRemark.edges[2].node.html
   const education = response.allMarkdownRemark.edges[3].node.html
 
-  const scroll = new LocomotiveScroll();
   return (
     <section id="resume">
       <div className="intro">A bit more about me.</div>
