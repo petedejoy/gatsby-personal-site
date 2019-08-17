@@ -29,7 +29,6 @@ const response = useStaticQuery(getImage)
 const nodes = response.allFile.edges;
   const project = projects.map(function(projects) {
     const node = find(nodes, {node: {relativePath: projects.image}})
-    console.log(projects.href)
     return(
     <div className={styles.container}>
         <a href={projects.href}>

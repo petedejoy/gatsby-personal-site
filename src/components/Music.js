@@ -16,7 +16,6 @@ const Music = ({ children }) => {
     }
   `
   const response = useStaticQuery(getMusic)
-  console.log(response)
   const body = response.markdownRemark.html
   return (
     <section id="Music">

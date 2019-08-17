@@ -32,7 +32,6 @@ const Resume = ({ resume }) => {
   const skills = response.allResumeJson.edges[0].node.resume.skills
   const frameworks = response.allResumeJson.edges[0].node.resume.frameworks
   const languages = response.allResumeJson.edges[0].node.resume.languages
-  console.log(skills)
   const skill = skills.map(function(skills) {
     const className = "bar-expand " + skills.name.toLowerCase()
     return (
