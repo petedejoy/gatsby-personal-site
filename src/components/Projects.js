@@ -48,7 +48,7 @@ const nodes = response.allFile.edges;
   return (
     <div id="projects">
       <div className="row"></div>
-      <h1 className={styles.intro}>Some of my work.</h1>
+      <h1 className="intro">Some of my work.</h1>
       {project}
       </div>
   )

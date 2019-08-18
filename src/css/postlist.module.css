@@ -2,30 +2,6 @@
   padding: 4rem 0;
 }
 
-.intro {
-  color: var(--mainBlack);
-  text-decoration: none;
-  font-family: leitura-news;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 56px;
-  letter-spacing: 0em;
-  line-height: 1.4em;
-  text-transform: none;
-  color: var(--mainBlack);
-  text-align: center;
-  padding: 5rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .intro{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-  }
-}
-
 .posts h4 {
   letter-spacing: 5px;
   text-transform: capitalize;

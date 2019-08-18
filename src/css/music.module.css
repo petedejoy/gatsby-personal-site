@@ -38,7 +38,34 @@
   padding-top:4rem;
 }
 
+/* Styling for instagram embed frames */
+.body > p > code > iframe {
+  background: white; 
+  width: 800px; 
+  border-radius: 3px; 
+  border: 1px solid #dbdbdb; 
+  box-shadow: none; 
+  display: block; 
+  margin: 0px 0px 12px; 
+  padding: 0px;
+  height: 500px;
+}
 
+/* Mobile optimization for instagram embed frames */
+@media only screen and (max-width: 900px) {
+  .body > p > code > iframe {
+    width: 300px;
+    height: 220px;
+  }
+}
+
+/* Mobile optimization for Youtube embed frames */
+@media only screen and (max-width: 900px) {
+  .body > div > iframe {
+    width: 300px !important;
+    height: 220px !important;
+  }
+}
 
 .subtitle {
   color: var(--mainBlack);

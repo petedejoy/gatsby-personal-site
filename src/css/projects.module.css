@@ -72,18 +72,3 @@
   line-height: 1.3em;
   letter-spacing: 0.2em;
 }
-
-.intro {
-  color: var(--mainBlack);
-  text-decoration: none;
-  font-family: leitura-news;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 56px;
-  letter-spacing: 0em;
-  line-height: 1.4em;
-  text-transform: none;
-  color: var(--mainBlack);
-  text-align: center;
-  padding: 5rem;
-}

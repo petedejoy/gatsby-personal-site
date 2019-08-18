@@ -76,12 +76,8 @@ a {
 }
 
 .body {
-  background: var(--mainWhite);
-  color: var(--mainBlack);
   font-size: 2rem;
-  font-family: opensans-bold, serif;
-  text-align: justify;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .subtitle {

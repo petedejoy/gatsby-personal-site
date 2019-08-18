@@ -16,7 +16,7 @@ const PostTemplate = ({ data }) => {
           <h1>{title}</h1>
           <h3>{description}</h3>
           <h4>
-            <span>{author}</span>/<span>{date}</span>
+            <span>{author}</span> | <span>{date}</span>
           </h4>
         </div>
         <Image fluid={img} />
