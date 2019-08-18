@@ -7,7 +7,7 @@ author: Pete
 ---
 I currently work for a startup called [Astronomer](https://astronomer.io). We are a scrappy and globally distributed team working hard to make [Apache Airflow](https://airflow.apache.org/) the future of workflow orchestration.
 
-I dove into a sales role out of college, but quickly transitioned into an engineering role as the roller coaster of early-stage startup life found our team with limited technical bandwidth. I wear a lot of different hats, but these days my job most resembles that of a technical product manager- I write React, Node, and other various front and back end code to make sure our user experience is clean. I'm stoked about technical problem solving and look forward to learning about new technologies.
+I dove into a sales role out of college, but quickly found myself in an engineering role as the roller coaster of early-stage startup life found our team with limited technical bandwidth. I wear a lot of different hats, but these days my job most resembles that of a technical product manager- I write React, Node, and other various front and back end code to make sure our user experience is clean. I'm stoked about technical problem solving and look forward to learning about new technologies.
 
 In college, I played varsity football, helped run the Club Alpine Ski Team, studied Chemistry and Physics, played in a band, and took as many music theory classes as my schedule would allow. One of my friends once called me "The Chameleon" because I ended up rolling with so many different crowds. Early aspirations of becoming a doctor landed my academic focus on experimental science, but I changed my trajectory about halfway through my college career when I had my first brushes with entrepreneurship.
 
