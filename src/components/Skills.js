@@ -62,7 +62,6 @@ const Resume = ({ resume }) => {
   return (
     <section id="resume">
       <div className="row skill">
-        <div className>
         <div className="intro">Some skills I've picked up through the years.</div>
           <div className="bars">
             <Columns number="3">
@@ -80,7 +79,6 @@ const Resume = ({ resume }) => {
               </div>
             </Columns>
           </div>
-        </div>
       </div>
     </section>
   )

@@ -30,7 +30,7 @@ const nodes = response.allFile.edges;
   const project = projects.map(function(projects) {
     const node = find(nodes, {node: {relativePath: projects.image}})
     return(
-    <div className={styles.container}>
+    <div className={styles.container} key={projects.name}>
         <a href={projects.href}>
           <Image fluid={node.node.childImageSharp.fluid} />
           <div className={styles.overlay}>
