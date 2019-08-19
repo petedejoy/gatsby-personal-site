@@ -4,6 +4,7 @@ import "./layout.css"
 import { StaticQuery } from "gatsby"
 import Header from "./Header"
 import Footer from "./Footer"
+import { Helmet } from 'react-helmet';
 
 const layout = ({ children }) => (
   <StaticQuery
@@ -22,9 +23,12 @@ const layout = ({ children }) => (
     `}
     render={data => (
       <React.Fragment>
+        <Helmet>
+          <meta charSet='utf-8' />
+          <title>{data.site.siteMetadata.title}</title>
+        </Helmet>
         <Header
           menuLinks={data.site.siteMetadata.menuLinks}
-          siteTitle={data.site.siteMetadata.title}
         />
         <div
           style={{

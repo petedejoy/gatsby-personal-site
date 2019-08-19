@@ -103,5 +103,6 @@ module.exports = {
         path: `src/content/resume`,
       },
     },
+    `gatsby-plugin-react-helmet`
   ],
 }

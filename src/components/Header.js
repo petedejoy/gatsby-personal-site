@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import PropTypes from "react"
+import PropTypes from "prop-types"
 import styles from "../css/header.module.css"
 import icon from "../../static/headericon.png"
 import Image from "gatsby"
@@ -36,21 +36,6 @@ const Header = ({ menuLinks }) => (
               </ul>
               }
             />
-            {/* <ul style={{ display: "flex", flex: 1 }}>
-              {menuLinks.map(link => (
-                <li
-                  key={link.name}
-                  style={{
-                    listStyleType: `none`,
-                    padding: `1rem`,
-                  }}
-                >
-                  <Link className={styles.items} to={link.link}>
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul> */}
           </nav>
         </div>
       </div>
@@ -58,7 +43,7 @@ const Header = ({ menuLinks }) => (
   </header>
 )
 Header.propTypes = {
-  menuLinks: PropTypes.function,
+  menuLinks: PropTypes.array,
 }
 
 export default Header
