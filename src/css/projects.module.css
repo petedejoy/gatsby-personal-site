@@ -50,10 +50,11 @@
   font-family: termina;
   font-weight: 600;
   font-style: normal;
-  font-size: 22px;
+  font-size: 1.5rem;
   line-height: 1.3em;
   letter-spacing: 0.2em;
 }
+
 
 .subtext {
   color: white;
@@ -68,7 +69,28 @@
   font-family: termina;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 1.3rem;
   line-height: 1.3em;
   letter-spacing: 0.2em;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .text {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+  .subtext {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text {
+    font-size: 0;
+    padding-bottom: 1rem;
+  }
+  .subtext {
+    font-size: .7rem;
+  }
 }

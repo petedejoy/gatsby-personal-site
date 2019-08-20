@@ -6,7 +6,7 @@ title: Resume - Education
 
 ### BA in Chemistry and Physics
 
-I went to [Bowdoin College](bowdoin.edu), where I studied Chemistry and Physics. I was pre-med, so much of my time was spent in the scientific realm, but Bowdoin's liberal arts philosophy allowed me to spend sigificant time focusing on Music Theory, Spanish, English Literature, and Film Studies. I loved being able to be broad in my academic focus- I wish i could have majored everything.
+I went to [Bowdoin College](bowdoin.edu), where I studied Chemistry and Physics. I was pre-med, so much of my time was spent in the scientific realm, but Bowdoin's liberal arts philosophy allowed me to spend sigificant time focusing on Music Theory, Spanish, English Literature, and Film Studies. I loved being able to be broad in my academic focus- it prepared me well for my current job, in which I split my time between the technical and human sides of the business. 
 
 On campus, I was a member of the varsity football team, a captain of the club alpine ski team, and played guitar and keys in a band.
 
