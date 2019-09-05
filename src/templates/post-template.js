@@ -9,6 +9,7 @@ const PostTemplate = ({ data }) => {
   const { title, date, author, image, description } = data.mdx.frontmatter
   const { body } = data.mdx.code
   const img = image.childImageSharp.fluid
+  console.log(data.mdx)
   return (
     <Layout>
       <section className={styles.template}>
