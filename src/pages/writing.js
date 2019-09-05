@@ -5,30 +5,29 @@ import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 
 const getPosts = graphql`
-  {
-    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
-      totalCount
-      edges {
-        node {
-          frontmatter {
-            title
-            slug
-            date(formatString: "MMMM Do, YYYY")
-            author
-            description
-            image {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
+{
+  allMdx(filter: {frontmatter: {type: {eq: "blog"}}}, sort: {fields: frontmatter___date, order: DESC}) {
+    edges {
+      node {
+        frontmatter {
+          title
+          slug
+          date(formatString: "MMMM Do, YYYY")
+          author
+          description
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
-          excerpt
         }
+        excerpt
       }
     }
   }
+}
 `
 
 export default () => {

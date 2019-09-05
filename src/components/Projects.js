@@ -9,40 +9,23 @@ import { find } from "lodash"
 
 
 const Projects = ({ projects }) => {
-  const getImage = graphql`
-  query getImage{
-    allFile(filter: {sourceInstanceName: {eq: "images"}}) {
-    edges {
-      node {
-        relativePath
-        childImageSharp{
-          fluid(maxWidth:1600) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  }
-  }
-  `
-const response = useStaticQuery(getImage)
-const nodes = response.allFile.edges;
   const project = projects.map(function(projects) {
-    const node = find(nodes, {node: {relativePath: projects.image}})
+    const projectInfo = projects.node.frontmatter;
+    // const node = find(nodes, {node: {relativePath: projects.image}})
     return(
     <div className={styles.container} key={projects.name}>
-        <a href={projects.href}>
-          <Image fluid={node.node.childImageSharp.fluid} />
+        <Link to={projectInfo.slug}>
+          <Image fluid={projectInfo.image.childImageSharp.fluid} />
           <div className={styles.overlay}>
             <div className={styles.text}>
-                {projects.name}
+                {projectInfo.title}
               <hr />
             </div>
             <div className={styles.subtext}>
-              {projects.description}
+              {projectInfo.description}
             </div>
           </div>
-        </a>
+        </Link>
       </div>)
   })
   return (

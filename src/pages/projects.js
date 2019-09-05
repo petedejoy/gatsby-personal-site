@@ -5,25 +5,34 @@ import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 
 const getProjects = graphql`
-  query Projects {
-    allProjectsJson {
-      edges {
-        node {
-          projects {
-            name
-            description
-            image
-            href
+{
+  allMdx(filter: {frontmatter: {type: {eq: "project"}}}) {
+    edges {
+      node {
+        frontmatter {
+          title
+          slug
+          description
+          link
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
           }
         }
+        excerpt
       }
     }
   }
+}
 `
 
 export default () => {
   const response = useStaticQuery(getProjects)
-  const projects = response.allProjectsJson.edges[0].node.projects
+  const projects = response.allMdx.edges
+  console.log(projects)
   return (
     <Layout>
       <Projects projects={projects} />

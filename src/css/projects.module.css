@@ -34,7 +34,7 @@
 }
 
 .container:hover .overlay {
-  opacity: 0.90;
+  opacity: 0.95;
 }
 
 .text {
@@ -43,6 +43,7 @@
   position: absolute;
   top: 20%;
   left: 50%;
+  width: 35rem;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -50,7 +51,7 @@
   font-family: termina;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.3em;
   letter-spacing: 0.2em;
 }
@@ -69,26 +70,28 @@
   font-family: termina;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   line-height: 1.3em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.05em;
 }
 
 
 @media only screen and (max-width: 900px) {
   .text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-bottom: 1rem;
+    width: 20rem;
   }
   .subtext {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .text {
-    font-size: 0;
+    font-size: 1rem;
     padding-bottom: 1rem;
+    width: 15rem;
   }
   .subtext {
     font-size: .7rem;
