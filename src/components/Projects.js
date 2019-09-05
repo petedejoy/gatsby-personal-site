@@ -14,7 +14,7 @@ const Projects = ({ projects }) => {
     // const node = find(nodes, {node: {relativePath: projects.image}})
     return(
     <div className={styles.container} key={projects.name}>
-        <Link to={projectInfo.slug}>
+        <Link to={`/projects/${projectInfo.slug}`}>
           <Image fluid={projectInfo.image.childImageSharp.fluid} />
           <div className={styles.overlay}>
             <div className={styles.text}>
