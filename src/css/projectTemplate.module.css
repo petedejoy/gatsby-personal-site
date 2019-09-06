@@ -22,14 +22,40 @@
   }
   .info {
     text-align: center;
+    padding-bottom: 1rem;
   }
   .info h1 {
     margin-bottom: 0.5rem;
     font: 48px/24px "leitura-news", sans-serif;
-    font-weight: 700;
-    padding-bottom: 2rem;
+    font-weight: 700; 
     padding-top: 0;
+    padding-bottom: 1rem;
   }
+  .info h2 {
+    padding-bottom:.5rem !important;
+  }
+  .info ul {
+    overflow: auto;
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 1rem;
+  }
+
+  .info li {
+    margin-bottom: 0.5rem;
+    font: 1.2rem "leitura-news", sans-serif;
+    font-weight: 400;
+    height: 25px;
+    float: left;
+    margin-right: 0px;
+    border-right: 1px solid var(--darkBlue);
+    padding: 0 20px;
+  }
+
+  .info li:last-child {
+    border-right: none;
+  }
+
   .content {
     margin: 2rem 0;
   }
@@ -44,6 +70,12 @@
     /* box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--darkGrey); */
     border: 1px solid var(--mainBlack);
     justify-content: center;
+  }
+  .tools{
+    padding-bottom: 1rem;
+  }
+  .image{
+    box-shadow: 4px 4px 4px 4px var(--darkGrey);
   }
   @media only screen and (max-width: 400px) {
     .info h1 {

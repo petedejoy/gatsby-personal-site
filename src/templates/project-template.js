@@ -6,20 +6,29 @@ import Layout from "../components/layout"
 import { MDXRenderer } from "gatsby-mdx"
 
 const ProjectTemplate = ({ data }) => {
-  const { title, date, author, image, description, link } = data.mdx.frontmatter
+  const { title, date, author, image, description, link, tools } = data.mdx.frontmatter
   console.log(link)
   const { body } = data.mdx.code
   const img = image.childImageSharp.fluid
+  const tool = tools ? tools.map((tool) =>
+    <li>{tool}</li>
+  ) : null
   return (
     <Layout>
       <section className={styles.template}>
         <div className={styles.info}>
           <h1>{title}</h1>
+          <div className={styles.tools}>
+            {tools ?
+              <ul>
+                {tool}
+              </ul> : null}
+          </div>
           {link ? <a href={link} className={styles.link}>
             See it in action{" "}
           </a> : null}
         </div>
-        <Image fluid={img} />
+        <Image fluid={img} className={styles.image} />
         <div className={styles.content}>
           <MDXRenderer>{body}</MDXRenderer>
         </div>
@@ -38,6 +47,7 @@ export const query = graphql`
         author
         description
         link
+        tools
         image {
           childImageSharp {
             fluid {

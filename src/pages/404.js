@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 const Error = () => {
   return (
     <Layout>
-      <h1>This is our Error page!</h1>
+      <h1>It looks like that page doesn't exist yet!</h1>
     </Layout>
   )
 }

@@ -6,7 +6,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 const getProjects = graphql`
 {
-  allMdx(filter: {frontmatter: {type: {eq: "project"}}}) {
+  allMdx(filter: {frontmatter: {type: {eq: "project"}}}, sort: {order: ASC, fields: frontmatter___order}) {
     edges {
       node {
         frontmatter {
