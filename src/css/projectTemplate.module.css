@@ -26,7 +26,8 @@
   }
   .info h1 {
     margin-bottom: 0.5rem;
-    font: 48px/24px "leitura-news", sans-serif;
+    font-family: termina, sans-serif;
+    font-size: 2.8rem;
     font-weight: 700; 
     padding-top: 0;
     padding-bottom: 1rem;
@@ -43,7 +44,8 @@
 
   .info li {
     margin-bottom: 0.5rem;
-    font: 1.2rem "leitura-news", sans-serif;
+    font-size: 1.2rem;
+    font-family: termina, sans-serif;
     font-weight: 400;
     height: 25px;
     float: left;

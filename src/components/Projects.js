@@ -19,11 +19,10 @@ const Projects = ({ projects }) => {
           <div className={styles.overlay}>
             <div className={styles.text}>
                 {projectInfo.title}
-              <hr />
             </div>
-            <div className={styles.subtext}>
+            {/* <div className={styles.subtext}>
               {projectInfo.description}
-            </div>
+            </div> */}
           </div>
         </Link>
       </div>)

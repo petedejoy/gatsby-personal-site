@@ -41,17 +41,17 @@
   color: white;
   text-transform: uppercase;
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   width: 35rem;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: termina;
+  font-family: termina, sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.3em;
   letter-spacing: 0.2em;
 }
