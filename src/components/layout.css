@@ -56,6 +56,25 @@ p {
   margin-bottom: 1.5rem;
 }
 
+ol {
+  font: 17px/24px "calluna", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: var(--mainGrey);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 85%;
+  height:85%;
+  margin: auto;
+}
+
+li{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
 a {
     color:var(--darkBlue);
 }
@@ -119,6 +138,12 @@ a:hover {
     margin:2rem;
 }
 
+.project-image{
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
 
 /* default Globals
  --------------------------------------------------------------- */

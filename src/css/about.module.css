@@ -27,6 +27,10 @@ a {
   color: var(--mainBlack)
 }
 
+h1 {
+  padding-bottom: 1rem;
+}
+
 .acadia {
   display: block;
   margin-left: auto;

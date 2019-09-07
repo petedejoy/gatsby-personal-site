@@ -9,4 +9,26 @@ order: 2
 tools: [Gatsby, React, CSS, HTML]
 ---
 
-The website you're on now! Built fully from scratch in Gatsby.js. There were 3 or 4 iterations of this thing that existed prior using different starter templates and frameworks, but along the way I became infatuated with Gatsby and really wanted to take a crack and starting from zero and building from the ground up.
+import oldSite from './old-site.png';
+
+## The Journey
+
+If you couldn't tell already, this project is the one you're currently browsing through! This site has been in the works for a long time. It took three separate iterations of personal sites, the first two being customized forks of pre-baked [HydeJack](https://hydejack.com/) and vanilla [React](https://github.com/tbakerx/Tim-Baker-Personal-Website)templates, until I decided I should burn everything down and build it from scratch. While the Hydejack version has been completely discarded, you can still see the React forked site I originally hacked on- click the image below to check it out:
+
+<a href="https://ecstatic-wescoff-c8624b.netlify.com" target="blank">
+    <img src={oldSite} className="project-image" />
+</a>
+
+Yeah, I know- it doesn't look bad right? You might even like it's styling more than this new site. There were a few issues with it that were dealbreakers for me, though:
+
+1. **I didn't build it myself.** When I had my original site stood up, I told my coworker I wanted to tear it down and start from 0. He responded, "Why? 95% of the programming anyone does these days involves taking other peoples' code and reworking it to fit your use case." That's definitely true, but I felt like I was limiting how much I could learn about React, web development, hosting, and CSS by taking some of those pre-built projects. I also wanted to do something that was uniquely my own; I had been doing more design work at work and thought it'd be really valuable for me to try to design something from the ground up.
+2. **I wanted to have a place to post writings.** I really love writing and had stopped writing all together while I spent about a year constantly engaged learning how to be a good software engineer. Now that I'm confident in my programming ability, I wanted to get back into writing more, and felt that having a blog would force me in the right direction. The old site was designed as a single-page site and plugging some sort of CMS into it proved to be a difficult challenge that would make me completely rip the guts out of that codebase and rebuild a lot of it in a janky way.
+3. **Gatsby is cool.** I'm big on geeking out to whatever's new in web development. I had read a ton about Gatsby and was looking for an opportunity to get my hands on it.
+
+<br/>
+
+Because of those reasons, I ended up deciding to self-educate and build this project in [Gatsby.js](https://www.gatsbyjs.org/), a blazing-fast static site generator that combines the modularity of React with the speed and extensibiltiy of GraphQL.
+
+Gatsby is very cool and setting up how all of this content is managed was pretty seamless, especially since I've done a fair bit of work in React/Apollo/GraphQl/Node. However, styling this site took _forever_. I had very little experience building up css from scratch, and it quickly became an obsessive battle to learn up on web design, typography, css best practice, and color palettes.
+
+It's a constant work-in-progress and has taken many, many hours of my life, but I'm proud of the way it's come together and look forward to continue tweaking it in the future. I also have plans to "templatize" this thing and open-source it- stay tuned for that!
