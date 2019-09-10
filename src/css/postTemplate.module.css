@@ -16,13 +16,16 @@
   transition: all 0.3s ease-in-out;
   margin-bottom: 2rem;
 }
+
 .link:hover {
   background: var(--mainBlack);
   color: var(--mainWhite);
 }
+
 .info {
   text-align: center;
 }
+
 .info h1 {
   margin-bottom: 0.5rem;
   font: 48px/24px "leitura-news", sans-serif;
@@ -30,11 +33,13 @@
   padding-bottom: 0;
   padding-top: 0;
 }
+
 .info h3 {
   text-transform: capitalize;
   font: 20px/24px "leitura-news", sans-serif;
   text-align: center;
 }
+
 .info h4 {
   letter-spacing: 1px;
   text-transform: capitalize;
@@ -42,6 +47,7 @@
   text-align: center;
   margin-bottom: 3rem;
 }
+
 .content {
   margin: 2rem 0;
 }

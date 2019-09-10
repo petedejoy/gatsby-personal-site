@@ -45,7 +45,7 @@ const About = ({ children }) => {
         />
       </div>
       </div>
-      <img src={acadia} className={styles.acadia} alt="Acadia" />
+      <img src={acadia} className={styles.image} alt="Acadia" />
       <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
     </section>
   )

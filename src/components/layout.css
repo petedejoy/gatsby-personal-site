@@ -11,7 +11,7 @@
   --mainBlack: #3f3f3f;
   --darkGrey: #8e8e8e;
   --lightBlue: #8fcdef;
-  --darkBlue: #3b7db9;
+  --darkBlue: #3772FF;
 }
 
 body {
@@ -23,28 +23,28 @@ body {
 }
 
 h1 {
-  font: 30px/24px "opensans-bold", sans-serif;
+  font: 30px/24px "li", sans-serif;
   font-weight: 700;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 h2 {
-  font: 26px/24px "opensans-bold", sans-serif;
+  font: 26px/24px "leitura-news", sans-serif;
   font-weight: 600;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 h3 {
-  font: 22px/24px "opensans-bold", sans-serif;
+  font: 22px/24px "leitura-news", sans-serif;
   font-weight: 500;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 h4 {
-  font: 20px/24px "opensans-bold", sans-serif;
+  font: 20px/24px "leitura-news", sans-serif;
   font-weight: 500;
 }
 
@@ -73,11 +73,11 @@ li {
 }
 
 a {
-  color: var(--darkBlue);
+  color: var(--mainBlack);
 }
 
 a:hover {
-  color: var(--lightBlue);
+  color: var(--darkBlue);
 }
 
 .about {

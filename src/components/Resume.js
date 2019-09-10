@@ -31,27 +31,27 @@ const Resume = ({ resume }) => {
       <div className="intro">A bit more about me.</div>
       <div className={classnames("row", styles.work)}>
         <div className="three columns header-col">
-          <h1 data-scroll>
-            <span>Work</span>
+          <h1 data-scroll className={styles.title}>
+            <span className={styles.underline}>Work</span>
           </h1>
         </div>
 
         <div className="nine columns main-col">
-          <div dangerouslySetInnerHTML={{ __html: work }} />
+          <div className={styles.markdownStyling} dangerouslySetInnerHTML={{ __html: work }} />
         </div>
       </div>
 
       <div className={classnames("row", styles.education)}>
         <div className="three columns header-col">
-          <h1>
-            <span>Education</span>
+          <h1 data-scroll className={styles.title}>
+            <span className={styles.underline}>Education</span>
           </h1>
         </div>
 
         <div className="nine columns main-col">
           <div className="row item">
             <div className="twelve columns">
-              <div dangerouslySetInnerHTML={{ __html: education }} />
+              <div className={styles.markdownStyling} dangerouslySetInnerHTML={{ __html: education }} />
             </div>
           </div>
         </div>
@@ -59,13 +59,13 @@ const Resume = ({ resume }) => {
 
       <div className={classnames("row", styles.affiliations)}>
         <div className="three columns header-col">
-          <h1>
-            <span>Affiliations</span>
+        <h1 data-scroll className={styles.title}>
+            <span className={styles.underline}>Affiliations</span>
           </h1>
         </div>
 
         <div className="nine columns main-col">
-          <div dangerouslySetInnerHTML={{ __html: affiliations }} />
+          <div className={styles.markdownStyling} dangerouslySetInnerHTML={{ __html: affiliations }} />
         </div>
       </div>
     </section>

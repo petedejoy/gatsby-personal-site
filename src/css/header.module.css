@@ -32,6 +32,10 @@
   line-height: 1em;
 }
 
+.active {
+  color: var(--darkBlue);
+}
+
 .smallMenu > div > ul {
   display: block;
 }

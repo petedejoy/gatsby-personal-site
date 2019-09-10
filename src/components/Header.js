@@ -28,7 +28,7 @@ const Header = ({ menuLinks }) => (
                   <li
                     key={link.name}
                   >
-                    <Link className={styles.items} to={link.link}>
+                    <Link activeClassName={styles.active} className={styles.items} to={link.link}>
                       {link.name}
                     </Link>
                   </li>

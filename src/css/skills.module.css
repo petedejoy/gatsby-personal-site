@@ -46,12 +46,17 @@
   border-radius: 3px 0 0 3px;
 }
 
-.bars .skillTitle {
+.skillTitle {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 3rem !important;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-decoration-color: var(--darkBlue);
+  padding-top: 1rem;
 }
+
 
 @media only screen and (max-width: 900px) {
   .bars>div>div>div {
