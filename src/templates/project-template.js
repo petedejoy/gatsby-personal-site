@@ -1,12 +1,12 @@
 import React from "react"
 import styles from "../css/projectTemplate.module.css"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Image from "gatsby-image"
 import Layout from "../components/layout"
 import { MDXRenderer } from "gatsby-mdx"
 
 const ProjectTemplate = ({ data }) => {
-  const { title, date, author, image, description, link, tools } = data.mdx.frontmatter
+  const { title, image, description, link, tools } = data.mdx.frontmatter
   console.log(link)
   const { body } = data.mdx.code
   const img = image.childImageSharp.fluid

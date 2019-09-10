@@ -1,0 +1,61 @@
+.bars {
+  width: 95%;
+  float: left;
+  padding: 0;
+  text-align: left;
+}
+
+.bars>div>div>div {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.bars .skills {
+  margin-top: 36px;
+  list-style: none;
+}
+
+.bars li {
+  position: relative;
+  margin-bottom: 60px;
+  background: #ccc;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.bars li em {
+  font: 15px "opensans-bold", sans-serif;
+  color: #313131;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+  position: relative;
+  top: -36px;
+}
+
+.barExpand {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding-right: 24px;
+  background: var(--mainBlack);
+  display: inline-block;
+  height: 16px;
+  line-height: 12px;
+  border-radius: 3px 0 0 3px;
+}
+
+.bars .skillTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .bars>div>div>div {
+    display: block;
+    width: 100% !important;
+  }
+}

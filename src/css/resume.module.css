@@ -1,0 +1,41 @@
+h1 {
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 span {
+  border-bottom: 3px solid #3b7db9;
+  padding-bottom: 6px;
+}
+
+h2 {
+  font: 30px/24px "opensans-bold", sans-serif;
+  letter-spacing: 1px;
+  padding-bottom: 6px;
+  text-align: left;
+}
+
+h3 {
+  font: 23px/30px "opensans-bold", sans-serif;
+  font-style: italic;
+  text-align: left;
+}
+
+h4 {
+  font: 30px "opensans-bold", sans-serif;
+  padding-bottom: 6px;
+  text-decoration: underline #3b7db9;
+}
+
+.header-col {
+  padding-top: 9px;
+}
+
+.education, .work, .affiliations {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--lightBlue);
+}

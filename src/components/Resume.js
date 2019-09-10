@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import Columns from "react-columns"
-import styles from "../css/about.module.css"
+import styles from "../css/resume.module.css"
 import { useStaticQuery } from "gatsby"
+import classnames from "classnames"
 
 const Resume = ({ resume }) => {
   const getResume = graphql`
@@ -19,7 +20,7 @@ const Resume = ({ resume }) => {
       }
     }
   `
-  
+
   const response = useStaticQuery(getResume)
   const work = response.allMarkdownRemark.edges[4].node.html
   const affiliations = response.allMarkdownRemark.edges[2].node.html
@@ -28,7 +29,7 @@ const Resume = ({ resume }) => {
   return (
     <section id="resume">
       <div className="intro">A bit more about me.</div>
-      <div className="row work">
+      <div className={classnames("row", styles.work)}>
         <div className="three columns header-col">
           <h1 data-scroll>
             <span>Work</span>
@@ -40,7 +41,7 @@ const Resume = ({ resume }) => {
         </div>
       </div>
 
-      <div className="row education">
+      <div className={classnames("row", styles.education)}>
         <div className="three columns header-col">
           <h1>
             <span>Education</span>
@@ -56,7 +57,7 @@ const Resume = ({ resume }) => {
         </div>
       </div>
 
-      <div className="row affiliations">
+      <div className={classnames("row", styles.affiliations)}>
         <div className="three columns header-col">
           <h1>
             <span>Affiliations</span>

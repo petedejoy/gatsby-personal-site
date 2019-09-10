@@ -20,7 +20,7 @@ const About = ({ children }) => {
   const body = response.markdownRemark.html
   return (
     <section id="about">
-    <div className={styles.blur}>
+    <div className={styles.freeze}>
     <img src={headshot} className={styles.headshot} />
       <h1 className={styles.intro}>Hello, I'm Pete.</h1>
       <h3 className={styles.subtitle}>
