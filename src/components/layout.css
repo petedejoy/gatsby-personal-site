@@ -8,15 +8,19 @@
 :root {
   --mainGrey: #eaeaea;
   --mainWhite: #fdfdfd;
+  --offWhite: #f6efeb;
   --mainBlack: #3f3f3f;
   --darkGrey: #8e8e8e;
   --lightBlue: #8fcdef;
   --darkBlue: #3772FF;
+  --darkerBlue: #1c203a;
+  --lightGreen: #62bddb;
+  --redBrown: #805c77;
+
 }
 
 body {
   background: var(--mainWhite);
-  color: var(--mainBlack);
   font-size: 1.5rem;
   font-family: calluna, serif;
   text-align: left;

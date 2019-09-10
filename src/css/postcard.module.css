@@ -13,7 +13,7 @@
 .info h2 {
   font-size: 30px;
   text-transform: capitalize;
-  font: 28px/24px "termina", sans-serif;
+  font: 28px/24px;
   font-weight: 600;
   padding-bottom: .5rem;
   display: inline-block;
@@ -38,7 +38,8 @@
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
-  font: 18px/24px "raleway", sans-serif;
+  font: 18px/24px "leitura-news", sans-serif;
+  font-weight: 600;
   /* box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--darkGrey); */
   border: 1px solid var(--mainBlack)
 }
