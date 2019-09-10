@@ -31,17 +31,17 @@ const About = ({ children }) => {
         <SocialIcon
           url="https://github.com/petedejoy"
           className={styles.icon}
-          bgColor="3f3f3f"
+          bgColor="3772FF"
         />
         <SocialIcon
           url="https://twitter.com/pdejoy58"
           className={styles.icon}
-          bgColor="3f3f3f"
+          bgColor="3772FF"
         />
         <SocialIcon
           url="https://instagram.com/peteybutterjellytime"
           className={styles.icon}
-          bgColor="3f3f3f"
+          bgColor="3772FF"
         />
       </div>
       </div>
