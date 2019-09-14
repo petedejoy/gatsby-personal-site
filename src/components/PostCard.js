@@ -20,7 +20,7 @@ const PostCard = ({ post }) => {
           </h6>
           <p>{description}</p>
           <Link to={slug} className={styles.link}>
-            Read More{" "}
+            READ MORE{" "}
           </Link>
         </div>
       </div>

@@ -1,98 +1,126 @@
 .template {
-    width: 80vw;
-    margin: 4rem auto;
-    max-width: 750px;
-    padding: 0.5rem;
-    background: var(--mainWhite);
-  }
-  
-  .link {
-    border: 1px solid var(--mainBlack);
-    padding: 4px 8px;
-    display: inline-block;
-    color: var(--mainBlack);
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all 0.3s ease-in-out;
-    margin-bottom: 2rem;
-  }
-  .link:hover {
-    background: var(--darkBlue);
-    color: var(--mainWhite);
-    border: 1px solid var(--mainWhite);
-  }
-  .info {
-    text-align: center;
-    padding-bottom: 1rem;
-  }
+  width: 80vw;
+  margin: 4rem auto;
+  max-width: 750px;
+  padding: 0.5rem;
+  background: var(--mainWhite);
+}
+
+.link {
+  padding: .5rem .6rem;
+  display: inline-block;
+  color: var(--mainWhite);
+  text-decoration: none;
+  transition:800ms ease all;
+  font: .7rem "leitura-news", sans-serif;
+  font-weight: 500;
+  /* box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--darkGrey); */
+  /* border: 1px solid var(--mainBlack); */
+  justify-content: center;
+  box-shadow: 2px 2px 2px var(--darkGrey);
+  cursor:pointer;
+  letter-spacing: 1.5px;
+}
+button{
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+  border:none;
+  position:relative;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:var(--darkBlue);
+  color: var(--mainWhite);
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: var(--darkBlue);
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.info {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.info h1 {
+  margin-bottom: 0.5rem;
+  font-family: termina, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+.info h2 {
+  padding-bottom: .5rem !important;
+}
+
+.info ul {
+  overflow: auto;
+  list-style-type: none;
+  display: inline-block;
+  padding-top: 1rem;
+}
+
+.info li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-family: termina, sans-serif;
+  font-weight: 400;
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid var(--darkBlue);
+  padding: 0 20px;
+}
+
+.info li:last-child {
+  border-right: none;
+}
+
+.content {
+  margin: 2rem 0;
+}
+
+.tools {
+  padding-bottom: 1rem;
+}
+
+.image {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px var(--darkGrey);
+}
+
+@media only screen and (max-width: 400px) {
   .info h1 {
-    margin-bottom: 0.5rem;
-    font-family: termina, sans-serif;
-    font-size: 2.8rem;
-    font-weight: 700; 
-    padding-top: 0;
-    padding-bottom: 1rem;
-  }
-  .info h2 {
-    padding-bottom:.5rem !important;
+    font: 35px/24px "leitura-news", sans-serif;
+    font-weight: 700;
+    line-height: 2.5rem;
   }
   .info ul {
-    overflow: auto;
-    list-style-type: none;
-    display: inline-block;
-    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
   }
-
   .info li {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    font-family: termina, sans-serif;
-    font-weight: 400;
-    height: 25px;
-    float: left;
-    margin-right: 0px;
-    border-right: 1px solid var(--darkBlue);
-    padding: 0 20px;
-  }
-
-  .info li:last-child {
+    font-size: 1rem;
     border-right: none;
   }
-
-  .content {
-    margin: 2rem 0;
-  }
-  .link {
-    padding: 4px 8px;
-    display: inline-block;
-    color: var(--mainBlack);
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all 0.3s ease-in-out;
-    font: 18px/24px "leitura-news", sans-serif;
-    font-weight: 600;
-    /* box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--darkGrey); */
-    border: 1px solid var(--mainBlack);
-    justify-content: center;
-  }
-  .tools{
-    padding-bottom: 1rem;
-  }
-  .image{
-    box-shadow: 4px 4px 4px 4px var(--darkGrey);
-  }
-  @media only screen and (max-width: 400px) {
-    .info h1 {
-       font: 35px/24px "leitura-news", sans-serif;
-       font-weight: 700;
-       line-height: 2.5rem;
-    }
-    .info ul {
-      display: flex;
-      flex-direction: column;
-    }
-    .info li {
-      font-size: 1rem;
-      border-right: none;
-    }
 }

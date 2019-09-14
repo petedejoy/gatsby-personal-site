@@ -26,27 +26,59 @@
 }
 
 .info p {
-  padding: 1rem;
+  padding-top: 1rem;
   text-align: center;
   font: 18px/24px "calluna", sans-serif;
 }
 
 .link {
-  padding: 4px 8px;
+  padding: .5rem .6rem;
   display: inline-block;
-  color: var(--mainBlack);
+  color: var(--mainWhite);
   text-decoration: none;
-  text-transform: capitalize;
-  transition: all 0.3s ease-in-out;
-  font: 18px/24px "leitura-news", sans-serif;
-  font-weight: 600;
+  transition:800ms ease all;
+  font: .7rem "leitura-news", sans-serif;
+  font-weight: 500;
   /* box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--darkGrey); */
-  border: 1px solid var(--mainBlack)
+  /* border: 1px solid var(--mainBlack); */
+  justify-content: center;
+  background-color: var(--mainBlack);
+  box-shadow: 2px 2px 2px var(--darkGrey);
+  cursor:pointer;
+  letter-spacing: 1.5px;
 }
-
-.link:hover {
+.link{
   background: var(--mainBlack);
   color: var(--mainWhite);
+  border:none;
+  position:relative;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.link:hover{
+  background:var(--darkBlue);
+  color: var(--mainWhite);
+}
+.link:before,.link:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: var(--darkBlue);
+  transition:400ms ease all;
+}
+.link:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.link:hover:before,.link:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
 
 @media screen and (min-width: 776px) {

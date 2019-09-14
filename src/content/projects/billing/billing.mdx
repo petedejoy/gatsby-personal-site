@@ -6,7 +6,7 @@ image: "../../../images/billing.png"
 type: project
 link: "https://trial.astronomer.io"
 order: 3
-tools: [Javascript, HTML, CSS, Node, Stripe API]
+tools: [Javascript, HTML, CSS, Node, Stripe API, Heroku]
 ---
 
 import billing1 from './billing1.png'
@@ -14,45 +14,50 @@ import billing2 from './billing2.png'
 import billing3 from './billing3.png'
 import billing4 from './billing4.png'
 
-To satisfy my company's need for the ability to collect payment information, I built a Node app using the Stripe Elements library that successfully collects credit card information, tokenizes it on an Express server, then makes an API call to Stripe to create a new customer with an associated credit cardu. I did this with 0 prior experience in Javascipt or Node, so it was quite the learning experience and was the first professional programming project I tackled.
+To satisfy my company's need for the ability to collect payment information during a time when we were short on engineering expertise, I built a Node app using the Stripe Elements library that successfully collects credit card information, tokenizes it on an Express server, then makes an API call to Stripe to create a new customer with an associated credit card. I did this with 0 prior experience in Javascript or Node; this was the first professional programming project I tackled.
 
 ## Where it all Began
 
-This project taught me how to program! It all began back in 2018, when our then 6-person team at [Astronomer](https://astronomer.io) realized we found product-market fit with our managed [Apache Airflow](https://airflow.apache.org) platform. Things got crazy quickly- we had spent a year building an MVP and soon after launching, we found ourselves needing to scale more quickly than we had planned. 
+This project is how I learned to program! It all began back in 2018, when our then 6-person team at [Astronomer](https://astronomer.io) realized we found product-market fit with our managed [Apache Airflow](https://airflow.apache.org) platform. Things got crazy quickly- we had spent a year building an MVP and soon after launching, we found ourselves needing to scale more quickly than we had planned.
 
-Along with that scale came the need for engineers; as it turns out, when you're building a company cenetered around open-source software that primarily sells to data engineers, technical firepower is essential for everything from engineering to sales. There was just one problem: we were quickly running out of money from our previous financing round and couldn't hire the folks we needed to push some of our techincal projects through the finish line.
+Along with that scale came the need for engineers; as it turns out, when you're building a company centered around open-source software that primarily sells to data engineers, technical firepower is essential for everything from engineering to sales. There was just one problem: we were quickly running out of money from our previous financing round and couldn't hire the folks we needed to push some of our technical projects through the finish line.
 
 ## The Problem
 
-We had a seemingly endless list of engineering projects across the board that needed to be tended too, and, at the time, our CTO, CEO, and a single junior developer were doing the bulk of the heavy lifting. One of those projects involved collecting payment from users of our SaaS product; at that point, we had built a product that was a beyond the MVP stage and could handle generating tangible value for actual users. People wanted to pay us for the service, but we didn't quite know how to collect their credit card information and had no experience integrating with any popular payment APIs.
+We had an endless list of engineering projects across the board that needed to be tended too, and, at the time, our CTO, CEO, and a single junior developer were doing the bulk of the heavy lifting. One of the projects that our growth team really needed done involved collecting payment from users of our SaaS product. Our product was maturing and beginning to generate real value for our customers; people wanted to pay us for the service, but we didn't quite know how to collect their credit card information and had no experience integrating with any popular payment APIs.
 
-So, for a time, we set up a [Noteshred](https://noteshred.com) account and asked people for their credit card information via that service. It was _super_ janky- people were emailed a blank text field and told to submit their credit card number, cvc, billing zip, and name to that field and we'd go ahead and add their information manually to our [Stripe](https://stripe.com) account.
+So, for a time (and this still makes me cringe), we set up a [Noteshred](https://noteshred.com) account and asked people for their credit card information via that service. It was _super_ janky- people were emailed a blank text field and told to submit their credit card number, cvc, billing zip code, and name to that field and we'd go ahead and add their information manually to our [Stripe](https://stripe.com) account.
 
-We also wanted to be a "normal" SaaS company at the time, and felt that users should be able to sign-up and pay for our product in the self-directed way pioneered by [Atlassian](https://atlassian.com) back in the 2000s when they successfully scaled their business in a fully automated way when they [couldn't afford a sales force](https://stratechery.com/2019/what-is-a-tech-company/).
+On the same note, we were beginning a push to normalize our processes. Towards that objective, I felt that users should be able to sign-up and pay for our product in the self-directed way pioneered by [Atlassian](https://atlassian.com) back in the 2000s when they successfully scaled their business in a fully automated way when they [couldn't afford a sales force](https://stratechery.com/2019/what-is-a-tech-company/).
 
-At the time, my job was "growth". As is typical at an early-stage company, I was given an arbitrary goal (in this case, to do whatever needs to be done to help the company grow our ARR) and told to run with it. To me, the inability to collect payment information in a reliable way was the biggest kink in our sales process: we often had folks sign up for a trial, like the service a lot, then have non-starter issues paying via our existing process.
+While I’m not sure exactly what my title was at the time, I know that, at a high level, I was responsible for growth. As is typical at an early-stage company, I was given an arbitrary goal (in this case, to do whatever needs to be done to help the company grow our ARR) and told to run with it. To me, the inability to collect payment information in a reliable way was the biggest kink in our sales process: we often had folks sign up for a trial, like the service a lot, then be blocked from converting due to our existing payment process.
 
-Keep in mind that, at this point in my career, I had virtually no experience programming. I had done some took some computer science in college and was pretty solid with git from pushing markdown files to our docs repo, but never really got beyond super entry-level concepts.
+Keep in mind that, at this point in my career, I had virtually no experience programming. I had done some took some computer science in college and was pretty solid with git from pushing markdown files to our docs repo, but never moved beyond entry-level concepts.
 
-After some research, I learned that Stripe not only provides a convient tool for charging customers manually, but also has an API _designed_ to help businesses like ours build robust payment integrations. This was a pretty big revelation for me, and was the first step on what would become a signifcant journey in technical exploration.
+After some research, I learned that Stripe not only provides a convenient tool for charging customers manually, but also has an API designed to help businesses like ours build robust payment integrations. This was a pretty big revelation for me, and was the first step on what would become a significant journey in technical exploration.
 
 
 ## Scoping the Solution
 
-My first idea was to build a simple Stripe payment form directly into our app's React UI. How hard could it be? All we needed to do was do some programming magic, send some data to Stripe, and - voila - we'd have payment information in a way that's much more reliable from the user's perspective. After digging a bit, I found [Stripe's React Elements](https://github.com/stripe/react-stripe-elements) library that they've open-sourced on Github. After a few nights of wrestling with npm and learning how to run applications locally, I finally was able to actually make something in my browser: 
+My first idea was to build a simple Stripe payment form directly into our app's React UI. How hard could it be, right? All we needed to do was do some programming magic, send some data to Stripe, and - voila - we'd have payment information in a way that's much more reliable from the user's perspective. After digging a bit, I found [Stripe's React Elements](https://github.com/stripe/react-stripe-elements) library that they've open-sourced on Github. After a few nights of wrestling with npm and learning how to run applications locally, I finally was able to actually make something appear in my browser:
 
 <img src={billing1} alt="Billing 1" className="row" />
 
-It wasn't pretty, but I was absolutely ecstatic to see some progress. At the time, I was basically just following Stripe's guides and copy/pasting code until something worked, but after another week or so of css/html learning and applicaiton, I was able to mangle that barebones form into a format that was a bit more passible:
+It wasn't pretty, but I was absolutely ecstatic to see some progress. At the time, I was basically just following Stripe's guides and copy/pasting code until something worked, but after another week or so of css/html learning and application, I was able to mangle that barebones form into a format that was a bit more passible:
 
 <img src={billing2} alt="Billing 2" className="row" />
 
-Still not pretty, but progress! At this point, I decided to pull trigger on a Udemy course in React to dive into as I continued progressing through this project. That helped get my wheels spinning a bit faster as I continued to build this form out, but it became evident pretty quickly that it wouldn't make sense to bake my amateur work directly into our production applcation, as the goal here was to just decrease friction in the sales process rather than improve our core product.
+Still not pretty, but progress! At this point, I decided to dive into a Udemy course in React as I continued progressing through this project. That helped get my wheels spinning a bit faster as I continued to build this form out, but it became evident pretty quickly that it wouldn't make sense to bake my amateur work directly into our production application, as the goal here was to just decrease friction in the sales process rather than improve our core product.
 
-The next idea was the build a completely standalone billing microservie, with its own API to handle routing API calls to Stripe (you can't make calls directly from the client because it'd expose credit card information to potential man-in-the-middle attacks). After a few weeks of diving deeper into into building full-stack applications and reading _literally_ every post I could find on Stripe integrations for beginners, I ended up forking [Stripe's payment form demo](https://github.com/stripe/stripe-payments-demo) on Github and repurposing it to fit our needs.
+The next idea was the build a completely standalone billing microservice, with its own API to handle routing API calls to Stripe (you can't make calls directly from the client because it'd expose credit card information to potential man-in-the-middle attacks). After a few weeks of diving deeper into into building full-stack applications and reading _literally_ every post I could find on Stripe integrations for beginners, I ended up forking [Stripe's payment form demo](https://github.com/stripe/stripe-payments-demo) on Github and repurposing it to fit our needs.
 
 <div className="row">
     <img src={billing3} alt="Billing 3" className="six" />
     <img src={billing4} alt="Billing 4" className="six" />
 </div>
 
+These forms didn't require much tweaking out-of-the-box, but they only encapsulated the client-side work needed for this project; in order to connect to your own Stripe account and transfer a customer's payment information, you need a server-side component to handle decryption and data transfer. So the next step here was to learn about the [Express framework](https://expressjs.com/) so that I could spin up a lightweight Node API and deploy it to [Heroku](https://heroku.com).
+
+## The Final Product
+
+At the end of the day, after about 2 months of learning the fundamentals of programming, I was able to get the app stood up. Our count of paying customers jumped by 600% in the month following, as we were free to implement a much greater degree of automation around sign up and payment in our SaaS tool. While this app is still running in production for us as of September 2019, I actually spent a good bit of time integrating a new payment system into our core application that will go live soon. I'll save that story for another write-up!
