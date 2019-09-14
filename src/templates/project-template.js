@@ -24,9 +24,9 @@ const ProjectTemplate = ({ data }) => {
                 {tool}
               </ul> : null}
           </div>
-          {link ? <button href={link} className={styles.link}>
+          {link ? <a href={link}><button className={styles.link}>
             SEE IT IN ACTION{" "}
-          </button> : null}
+          </button></a> : null}
         </div>
         <Image fluid={img} className={styles.image} />
         <div className={styles.content}>

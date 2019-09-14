@@ -109,12 +109,23 @@ button:hover:before,button:hover:after{
   box-shadow: 0 10px 10px var(--darkGrey);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .info h1 {
     font: 35px/24px "leitura-news", sans-serif;
     font-weight: 700;
     line-height: 2.5rem;
   }
+  .info ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .info li {
+    font-size: 1rem;
+    border-right: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .info ul {
     display: flex;
     flex-direction: column;
