@@ -83,6 +83,16 @@ a:hover {
   color: var(--darkBlue);
 }
 
+table, th, td {
+  border: 1px solid black;
+  background: var(--mainWhite);
+  font-size: 1.2rem;
+  font-family: calluna, serif;
+  text-align: center;
+  border-collapse: collapse;
+  padding: .5rem;
+}
+
 .about {
   display: block;
   margin-left: auto;

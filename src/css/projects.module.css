@@ -30,7 +30,7 @@
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: var(--mainBlack);
+  background-color: var(--darkBlue);
 }
 
 .container:hover .overlay {
