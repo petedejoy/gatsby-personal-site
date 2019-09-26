@@ -21,6 +21,7 @@
   background: #ccc;
   height: 12px;
   border-radius: 3px;
+  padding-top: .5rem;
 }
 
 .bars li em {
@@ -41,8 +42,7 @@
   padding-right: 24px;
   background: var(--darkerBlue);
   display: inline-block;
-  height: 16px;
-  line-height: 12px;
+  height: 24px;
   border-radius: 3px 0 0 3px;
 }
 

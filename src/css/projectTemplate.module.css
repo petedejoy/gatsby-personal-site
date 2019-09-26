@@ -55,6 +55,15 @@ button:hover:before,button:hover:after{
   transition:800ms ease all;
 }
 
+li {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.textList{
+  width: 85%
+}
+
 .info {
   text-align: center;
   padding-bottom: 2rem;
@@ -106,7 +115,7 @@ button:hover:before,button:hover:after{
 
 .image {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 10px 10px var(--darkGrey);
+  box-shadow: .4rem .9rem 4rem .3rem var(--darkGrey);
 }
 
 @media only screen and (max-width: 600px) {
