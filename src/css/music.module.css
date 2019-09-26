@@ -51,19 +51,27 @@
   height: 500px;
 }
 
-/* Mobile optimization for instagram embed frames */
-@media only screen and (max-width: 900px) {
-  .body > p > code > iframe {
-    width: 300px;
-    height: 220px;
-  }
-}
-
-/* Mobile optimization for Youtube embed frames */
-@media only screen and (max-width: 900px) {
+/* Mobile optimization for instagram/youtube embed frames */
+@media only screen and (max-width: 600px) {
   .body > div > iframe {
     width: 300px !important;
     height: 220px !important;
+  }
+  .body > p > code > iframe {
+    width: 300px !important;
+    height: 220px !important;
+  }  
+}
+
+/* Small screen optimization for instagram/Youtube embed frames */
+@media only screen and (max-width: 900px) {
+  .body > div > iframe {
+    width: 600px;
+    height: 390px;
+  }
+  .body > p > code > iframe {
+    width: 600px;
+    height: 390px;
   }
 }
 
