@@ -3,7 +3,8 @@
   background: var(--mainWhite);
   padding: 1rem;
   text-align: center;
-  box-shadow: 0.1rem 0.3rem 1.5rem 0.2rem var(--mainGrey);
+  box-shadow: .4rem .9rem 1.5rem .3rem var(--darkGrey);
+  border-radius: 15px;
 }
 
 .info {
@@ -79,6 +80,10 @@
 .link:hover:before,.link:hover:after{
   width:100%;
   transition:800ms ease all;
+}
+
+.image > div > div {
+  padding-bottom: 71.3542% !important;
 }
 
 @media screen and (min-width: 776px) {
