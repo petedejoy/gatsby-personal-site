@@ -51,3 +51,30 @@
 .content {
   margin: 2rem 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .info h1 {
+    font: 35px/24px "leitura-news", sans-serif;
+    font-weight: 700;
+    line-height: 2.5rem;
+  }
+  .info ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .info li {
+    font-size: 1rem;
+    border-right: none;
+  }
+  .content img {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .content table {
+    padding: 0rem;
+  }
+  .content td {
+    padding: 0rem;
+  }
+}
