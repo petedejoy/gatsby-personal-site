@@ -48,6 +48,7 @@
   box-shadow: 2px 2px 2px var(--darkGrey);
   cursor:pointer;
   letter-spacing: 1.5px;
+  margin-bottom: 1rem !important;
 }
 .link{
   background: var(--mainBlack);

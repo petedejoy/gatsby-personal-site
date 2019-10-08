@@ -57,6 +57,13 @@ p {
   margin-bottom: 1.5rem;
 }
 
+figcaption {
+  font: 12px/24px "calluna", sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--darkGrey);
+}
+
 ol {
   font: 17px/24px "calluna", sans-serif;
   line-height: 1.5;
