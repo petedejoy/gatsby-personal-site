@@ -32,7 +32,6 @@ const getProjects = graphql`
 export default () => {
   const response = useStaticQuery(getProjects)
   const projects = response.allMdx.edges
-  console.log(projects)
   return (
     <Layout>
       <Projects projects={projects} />
