@@ -35,6 +35,13 @@
   line-height: 3rem;
 }
 
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
 .info h3 {
   font: 20px/24px "leitura-news", sans-serif;
   text-align: center;
