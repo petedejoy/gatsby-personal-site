@@ -169,68 +169,58 @@ blockquote {
  * tooltiptext Styles
  */
 
-/* Add this attribute to the element that needs a tooltiptext */
-.tooltiptext {
-  position: relative;
-  z-index: 2;
-  cursor: pointer;
+ .tooltip {
+  display:inline-block;
+  position:relative;
+  border-bottom:1px dotted var(--darkBlue);
+  text-align:left;
 }
 
-/* Hide the tooltiptext content by default */
-.tooltiptext:before,
-.tooltiptext:after {
-  visibility: hidden;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  pointer-events: none;
+.tooltip .top {
+  min-width:400px;
+  max-width:600px;
+  top:-20px;
+  left:50%;
+  transform:translate(-30%,-100%);
+  padding:10px 20px;
+  color:var(--mainWhite);
+  background-color: var(--darkBlue);
+  font-weight:normal;
+  font-size:10px;
+  border-radius:8px;
+  position:absolute;
+  z-index:99999999;
+  box-sizing:border-box;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+  display:none;
 }
 
-/* Position tooltiptext above the element */
-.tooltiptext:before {
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-bottom: 5px;
-  margin-left: -80px;
-  padding: 7px;
-  width: 160px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #000;
-  background-color: hsla(0, 0%, 20%, 0.9);
-  color: #fff;
-  content: attr(data-tooltiptext);
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.2;
+.tooltip:hover .top {
+  display:block;
 }
 
-/* Triangle hack to make tooltiptext look like a speech bubble */
-.tooltiptext:after {
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -5px;
-  width: 0;
-  border-top: 5px solid #000;
-  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  content: " ";
-  font-size: 0;
-  line-height: 0;
+.tooltip .top i {
+  position:absolute;
+  top:100%;
+  left:30%;
+  margin-left:-15px;
+  width:30px;
+  height:15px;
+  overflow:hidden;
 }
 
-/* Show tooltiptext content on hover */
-.tooltiptext:hover:before,
-.tooltiptext:hover:after {
-  visibility: visible;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
+.tooltip .top i::after {
+  content:'';
+  position:absolute;
+  width:15px;
+  height:15px;
+  left:50%;
+  transform:translate(-50%,-50%) rotate(45deg);
+  background-color: var(--darkBlue);
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
 }
+
+
 
 
 /* default Globals
