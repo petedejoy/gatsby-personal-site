@@ -83,6 +83,7 @@ h1 {
 .body {
   font-size: 2rem;
   padding: 1rem;
+  padding-bottom: 4rem;
 }
 
 .subtitle {

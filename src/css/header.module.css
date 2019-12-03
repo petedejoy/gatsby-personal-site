@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
+
 .header {
   margin-bottom: 1.45rem;
   text-align: center;
@@ -18,6 +19,10 @@
 
 .icon {
   max-height: 2.5rem;
+}
+
+.center {
+  text-align: center;
 }
 
 .items {
@@ -54,3 +59,18 @@
     list-style-type: none;
     padding: 1rem;
   }
+
+.footer {
+  background-color: var(--mainBlack);
+}
+
+.footerImage {
+  background-image: url("../images/chamonix.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  height: 15rem;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 100;
+}
