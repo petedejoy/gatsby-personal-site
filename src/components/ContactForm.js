@@ -7,6 +7,7 @@ const ContactForm = () => {
     <div>
       <h1 className={styles.contactText}>Get in touch.</h1>
       <form className={styles.form} name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
         <div className={classnames("row", styles.inputs)}>
           <p className="four white">
             <label>Name: <input type="text" name="name" /></label>
