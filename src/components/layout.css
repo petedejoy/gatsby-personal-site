@@ -232,6 +232,15 @@ blockquote {
   margin: 0 auto;
 }
 
+.post-image {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 1
+}
+
+.padding-bottom {
+  padding-bottom: 2rem;
+}
 /* fixed width for IE8 */
 
 .ie .row {
