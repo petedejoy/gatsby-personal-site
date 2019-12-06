@@ -5,7 +5,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import Music from '../components/Music'
 
 export default () => {
-
     return (
       <Layout>
           <Music />

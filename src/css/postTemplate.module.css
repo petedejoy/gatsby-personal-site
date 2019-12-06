@@ -32,10 +32,17 @@
   font-weight: 700;
   padding-bottom: 0;
   padding-top: 0;
+  line-height: 3rem;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 .info h3 {
-  text-transform: capitalize;
   font: 20px/24px "leitura-news", sans-serif;
   text-align: center;
 }
@@ -50,6 +57,10 @@
 
 .content {
   margin: 2rem 0;
+}
+
+.content h2 {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
