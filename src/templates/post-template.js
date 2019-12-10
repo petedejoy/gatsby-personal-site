@@ -18,9 +18,10 @@ const PostTemplate = ({ data }) => {
           <title>{title}</title>
           <meta property="og:title" content={title}/>
           <meta property="og:description" content={description}/>
-          <meta property="og:image" content={image} />
-          <meta property="og:url" content={`https://petedejoy.com/${slug}`} />
-          <meta name="twitter:card" content={image} />
+          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${image}`} />
+          <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/${slug}`} />
+          <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${image}`} />
+          <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com${image}`} />
         </Helmet>
       <section className={styles.template}>
         <div className={styles.info}>
