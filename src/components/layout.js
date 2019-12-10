@@ -31,7 +31,8 @@ const layout = ({ children }) => (
           <meta property="og:description" content="A personal site to showcase writing and projects. Built from scratch in Gatsby.js." />
           <meta property="og:image" content={acadia} />
           <meta property="og:url" content="http://petedejoy.com" />
-          <meta name="twitter:card" content="../images/acadia.jpg" />
+          <meta name="twitter:image" content={acadia} />
+          <meta name="twitter:card" content={acadia} />
         </Helmet>
         <Header
           menuLinks={data.site.siteMetadata.menuLinks}
