@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Pete DeJoy | Personal Site`,
-    description: `Writing website for Pete DeJoy, built from scratch in Gatsby.js.`,
+    description: `Writing, projects, and music. Built from scratch in Gatsby.js.`,
     siteUrl: `https://petedejoy.com`,
     menuLinks: [
       {

@@ -14,6 +14,7 @@ const layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            description
             menuLinks {
               name
               link
@@ -27,8 +28,8 @@ const layout = ({ children }) => (
         <Helmet>
           <meta charSet='utf-8' />
           <title>{data.site.siteMetadata.title}</title>
-          <meta property="og:title" content="Pete DeJoy | Personal Site" />
-          <meta property="og:description" content="Writing, projects, and music. Built from scratch in Gatsby.js." />
+          <meta property="og:title" content={data.site.siteMetadata.title} />
+          <meta property="og:description" content={data.site.siteMetadata.description} />
           <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${homeMeta}`} />
           <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com`} />
           <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${homeMeta}`} />
