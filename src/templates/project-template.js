@@ -10,7 +10,7 @@ const ProjectTemplate = ({ data }) => {
   const { title, image, description, link, tools, slug } = data.mdx.frontmatter
   const { body } = data.mdx.code
   const img = image.childImageSharp.fluid
-  console.log(img)
+  console.log(`https://${process.env.GATSBY_DOMAIN}/projects${img.src}`)
   const tool = tools ? tools.map((tool) =>
     <li>{tool}</li>
   ) : null
@@ -21,10 +21,10 @@ const ProjectTemplate = ({ data }) => {
           <title>{title}</title>
           <meta property="og:title" content={title}/>
           <meta property="og:description" content={description}/>
-          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com/projects${img.src}`} />
+          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com/${img.src}`} />
           <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/projects/${slug}`} />
-          <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com/projects${img.src}`} />
-          <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com/projects${img.src}`} />
+          <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com/${img.src}`} />
+          <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com/${img.src}`} />
       </Helmet>
       <section className={styles.template}>
         <div className={styles.info}>
