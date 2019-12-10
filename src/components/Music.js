@@ -6,6 +6,8 @@ import Image from "gatsby-image"
 import { MDXRenderer } from "gatsby-mdx"
 import { useStaticQuery } from "gatsby"
 import { SocialIcon } from "react-social-icons"
+import { Helmet } from "react-helmet"
+import musicMeta from "../images/music-meta.png"
 
 const Music = ({ children }) => {
   const getMusic = graphql`
@@ -19,6 +21,15 @@ const Music = ({ children }) => {
   const body = response.markdownRemark.html
   return (
     <section id="Music">
+      <Helmet>
+        <meta charSet='utf-8' />
+          <meta property="og:title" content="Pete DeJoy | Music"/>
+          <meta property="og:description" content="I'm an aspiring vintage guitar collector and bedroom musician. In my free time, I make instagram videos."/>
+          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${musicMeta}`} />
+          <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/music`} />
+          <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${musicMeta}`} />
+          <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com${musicMeta}`} />
+      </Helmet>
     <div>
       <h1 className={styles.intro}>Some of my tunes.</h1>
       <h3 className={styles.subtitle}>

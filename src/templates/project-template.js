@@ -10,7 +10,6 @@ const ProjectTemplate = ({ data }) => {
   const { title, image, description, link, tools, slug } = data.mdx.frontmatter
   const { body } = data.mdx.code
   const img = image.childImageSharp.fluid
-  console.log(`https://${process.env.GATSBY_DOMAIN}/projects${img.src}`)
   const tool = tools ? tools.map((tool) =>
     <li>{tool}</li>
   ) : null
