@@ -4,7 +4,8 @@ import "./layout.css"
 import { StaticQuery } from "gatsby"
 import Header from "./Header"
 import Footer from "./Footer"
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet'
+import acadia from "../images/acadia.jpg"
 
 const layout = ({ children }) => (
   <StaticQuery
@@ -26,6 +27,12 @@ const layout = ({ children }) => (
         <Helmet>
           <meta charSet='utf-8' />
           <title>{data.site.siteMetadata.title}</title>
+          <meta property="og:title" content="Pete DeJoy" />
+          <meta property="og:description" content="A personal site to showcase writing and projects. Built from scratch in Gatsby.js." />
+          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${acadia}`} />
+          <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com`} />
+          <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${acadia}`} />
+          <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com${acadia}`} />
         </Helmet>
         <Header
           menuLinks={data.site.siteMetadata.menuLinks}
@@ -40,7 +47,7 @@ const layout = ({ children }) => (
         >
           {children}
         </div>
-        <Footer/>
+        <Footer />
       </React.Fragment>
     )}
   />
