@@ -4,11 +4,10 @@ import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import Layout from "../components/layout"
 import { MDXRenderer } from "gatsby-mdx"
-import { Helmet, Child } from "react-helmet"
+import { Helmet } from "react-helmet"
 
 const PostTemplate = ({ data }) => {
   const { title, date, author, image, description, slug } = data.mdx.frontmatter
-  console.log(title)
   const { body } = data.mdx.code
   const img = image.childImageSharp.fluid
   return (
