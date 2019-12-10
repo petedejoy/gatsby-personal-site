@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import Layout from "../components/layout"
 import { MDXRenderer } from "gatsby-mdx"
-import { Helmet } from "react-helmet"
+import { Helmet, Child } from "react-helmet"
 
 const PostTemplate = ({ data }) => {
   const { title, date, author, image, description, slug } = data.mdx.frontmatter
@@ -13,7 +13,6 @@ const PostTemplate = ({ data }) => {
   const img = image.childImageSharp.fluid
   return (
     <Layout>
-      <Child>
         <Helmet>
         <meta charSet='utf-8' />
           <title>{title}</title>
@@ -23,7 +22,6 @@ const PostTemplate = ({ data }) => {
           <meta property="og:url" content={`https://petedejoy.com/${slug}`} />
           <meta name="twitter:card" content={image} />
         </Helmet>
-      </Child>
       <section className={styles.template}>
         <div className={styles.info}>
           <h1>{title}</h1>

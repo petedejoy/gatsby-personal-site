@@ -23,7 +23,6 @@ const layout = ({ children }) => (
     `}
     render={data => (
       <React.Fragment>
-        <Parent>
         <Helmet>
           <meta charSet='utf-8' />
           <title>{data.site.siteMetadata.title}</title>
@@ -47,7 +46,6 @@ const layout = ({ children }) => (
           {children}
         </div>
         <Footer />
-        </Parent>
       </React.Fragment>
     )}
   />
