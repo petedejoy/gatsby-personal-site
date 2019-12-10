@@ -29,9 +29,9 @@ const layout = ({ children }) => (
           <title>{data.site.siteMetadata.title}</title>
           <meta property="og:title" content="Pete DeJoy" />
           <meta property="og:description" content="A personal site to showcase writing and projects. Built from scratch in Gatsby.js." />
-          <meta property="og:image" content={acadia} />
-          <meta property="og:url" content="http://petedejoy.com" />
-          <meta name="twitter:image" content={acadia} />
+          <meta property="og:image" content={`https://${process.env.REACT_APP_DOMAIN}/${acadia}`} />
+          <meta property="og:url" content={`https://${process.env.REACT_APP_DOMAIN}/${acadia}`} />
+          <meta name="twitter:image" content={`https://${process.env.REACT_APP_DOMAIN}/${acadia}`} />
           <meta name="twitter:card" content={acadia} />
         </Helmet>
         <Header
