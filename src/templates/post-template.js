@@ -17,10 +17,10 @@ const PostTemplate = ({ data }) => {
           <title>{title}</title>
           <meta property="og:title" content={title}/>
           <meta property="og:description" content={description}/>
-          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${img}`} />
-          <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/${slug}`} />
-          <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${img}`} />
-          <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com${img}`} />
+          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${img.src}`} />
+          <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/${slug.src}`} />
+          <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${img.src}`} />
+          <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com${img.src}`} />
         </Helmet>
       <section className={styles.template}>
         <div className={styles.info}>
