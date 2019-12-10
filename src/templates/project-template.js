@@ -20,10 +20,10 @@ const ProjectTemplate = ({ data }) => {
           <title>{title}</title>
           <meta property="og:title" content={title}/>
           <meta property="og:description" content={description}/>
-          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com/projects${image}`} />
+          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com/projects${img}`} />
           <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/projects/${slug}`} />
-          <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com/projects${image}`} />
-          <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com/projects${image}`} />
+          <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com/projects${img}`} />
+          <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com/projects${img}`} />
       </Helmet>
       <section className={styles.template}>
         <div className={styles.info}>
