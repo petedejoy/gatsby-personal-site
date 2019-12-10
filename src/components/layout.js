@@ -4,7 +4,8 @@ import "./layout.css"
 import { StaticQuery } from "gatsby"
 import Header from "./Header"
 import Footer from "./Footer"
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet'
+import acadia from "../images/acadia.jpg"
 
 const layout = ({ children }) => (
   <StaticQuery
@@ -28,7 +29,7 @@ const layout = ({ children }) => (
           <title>{data.site.siteMetadata.title}</title>
           <meta property="og:title" content="Pete DeJoy" />
           <meta property="og:description" content="A personal site to showcase writing and projects. Built from scratch in Gatsby.js." />
-          <meta property="og:image" content="../images/acadia.jpg" />
+          <meta property="og:image" content={acadia} />
           <meta property="og:url" content="http://petedejoy.com" />
           <meta name="twitter:card" content="../images/acadia.jpg" />
         </Helmet>
