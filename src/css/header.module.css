@@ -58,6 +58,7 @@
 .largeMenu > ul > li {
     list-style-type: none;
     padding: 1rem;
+    padding-left: 2.5rem;
   }
 
 .footer {
