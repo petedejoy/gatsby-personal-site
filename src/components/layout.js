@@ -23,9 +23,15 @@ const layout = ({ children }) => (
     `}
     render={data => (
       <React.Fragment>
+        <Parent>
         <Helmet>
           <meta charSet='utf-8' />
           <title>{data.site.siteMetadata.title}</title>
+          <meta property="og:title" content="Pete DeJoy" />
+          <meta property="og:description" content="A personal site to showcase writing and projects. Built from scratch in Gatsby.js." />
+          <meta property="og:image" content="../images/acadia.jpg" />
+          <meta property="og:url" content="http://petedejoy.com" />
+          <meta name="twitter:card" content="../images/acadia.jpg" />
         </Helmet>
         <Header
           menuLinks={data.site.siteMetadata.menuLinks}
@@ -40,7 +46,8 @@ const layout = ({ children }) => (
         >
           {children}
         </div>
-        <Footer/>
+        <Footer />
+        </Parent>
       </React.Fragment>
     )}
   />
