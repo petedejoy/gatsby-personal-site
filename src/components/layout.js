@@ -29,7 +29,7 @@ const layout = ({ children }) => (
           <title>{data.site.siteMetadata.title}</title>
           <meta property="og:title" content="Pete DeJoy" />
           <meta property="og:description" content="A personal site to showcase writing and projects. Built from scratch in Gatsby.js." />
-          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}${acadia}`} />
+          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${acadia}`} />
           <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}${acadia}`} />
           <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}${acadia}`} />
           <meta name="twitter:card" content={acadia} />
