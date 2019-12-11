@@ -13,7 +13,7 @@ const PostTemplate = ({ data }) => {
   return (
     <Layout>
         <Helmet>
-        <meta charSet='utf-8' />
+        <meta content="text/html" name="Content-Type" charSet='utf-8' />
           <title>{title}</title>
           <meta property="og:title" content={title}/>
           <meta property="og:description" content={description}/>

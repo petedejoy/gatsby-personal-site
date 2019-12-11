@@ -26,7 +26,7 @@ const layout = ({ children }) => (
     render={data => (
       <React.Fragment>
         <Helmet>
-          <meta charSet='utf-8' />
+        <meta content="text/html" name="Content-Type" charSet='utf-8' />
           <title>{data.site.siteMetadata.title}</title>
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:description" content={data.site.siteMetadata.description} />
