@@ -26,14 +26,14 @@ const layout = ({ children }) => (
     render={data => (
       <React.Fragment>
         <Helmet>
-        <meta content="text/html" name="Content-Type" charSet='utf-8' />
+        <meta charSet='utf-8' />
           <title>{data.site.siteMetadata.title}</title>
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:description" content={data.site.siteMetadata.description} />
           <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${homeMeta}`} />
           <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com`} />
           <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${homeMeta}`} />
-          <meta name="twitter:card" content={'post'} />
+          <meta name="twitter:card" content='photo' />
         </Helmet>
         <Header
           menuLinks={data.site.siteMetadata.menuLinks}
