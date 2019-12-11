@@ -28,7 +28,7 @@ const Music = ({ children }) => {
           <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${musicMeta}`} />
           <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/music`} />
           <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${musicMeta}`} />
-          <meta name="twitter:card" content='summary' />
+          <meta name="twitter:card" content='summary_large_image' />
       </Helmet>
     <div>
       <h1 className={styles.intro}>Some of my tunes.</h1>

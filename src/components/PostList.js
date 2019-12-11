@@ -16,7 +16,7 @@ const PostList = ({ posts }) => {
         <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${writingMeta}`} />
         <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/writing`} />
         <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${writingMeta}`} />
-        <meta name="twitter:card" content='summary' />
+        <meta name="twitter:card" content='summary_large_image' />
       </Helmet>
       <h1 className="intro">Technology, Business, Music, Mental Health, and Everything In-Between.</h1>
       <div className={styles.center}>
