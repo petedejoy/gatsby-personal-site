@@ -33,7 +33,7 @@ const layout = ({ children }) => (
           <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${homeMeta}`} />
           <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com`} />
           <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${homeMeta}`} />
-          <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com${homeMeta}`} />
+          <meta name="twitter:card" content={'post'} />
         </Helmet>
         <Header
           menuLinks={data.site.siteMetadata.menuLinks}
