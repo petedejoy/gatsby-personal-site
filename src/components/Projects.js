@@ -23,7 +23,7 @@ const Projects = ({ projects }) => {
         <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${projectsMeta}`} />
         <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/projects`} />
         <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${projectsMeta}`} />
-        <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com${projectsMeta}`} />
+        <meta name="twitter:card" content='summary' />
       </Helmet>
         <Link to={`/projects/${projectInfo.slug}`}>
           <Image fluid={projectInfo.image.childImageSharp.fluid} />

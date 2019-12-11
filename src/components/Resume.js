@@ -37,7 +37,7 @@ const Resume = ({ resume }) => {
         <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${aboutMeta}`} />
         <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/about`} />
         <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${aboutMeta}`} />
-        <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com${aboutMeta}`} />
+        <meta name="twitter:card" content='summary' />
       </Helmet>
       <div className="intro">A bit more about me.</div>
       <div className={classnames("row", styles.work)}>

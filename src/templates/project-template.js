@@ -23,7 +23,7 @@ const ProjectTemplate = ({ data }) => {
           <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com/${img.src}`} />
           <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/projects/${slug}`} />
           <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com/${img.src}`} />
-          <meta name="twitter:card" content={`https://${process.env.GATSBY_DOMAIN}.com/${img.src}`} />
+          <meta name="twitter:card" content='summary' />
       </Helmet>
       <section className={styles.template}>
         <div className={styles.info}>
