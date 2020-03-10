@@ -27,7 +27,11 @@
       },
       {
         "name": "Python",
-        "level": "30%"
+        "level": "40%"
+      },
+      {
+        "name": "SQL",
+        "level": "60%"
       }
     ],
     "frameworks": [
@@ -37,20 +41,24 @@
       },
       {
         "name": "Node",
-        "level": "60%"
+        "level": "80%"
       },
       {
         "name": "Apollo/GraphQL",
-        "level": "70%"
+        "level": "80%"
       },
       {
         "name": "Apache Airflow",
+        "level": "70%"
+      },
+      {
+        "name": "PostgreSQL",
         "level": "50%"
       }
     ],
     "skills": [
       {
-        "name": "SaaS Sales",
+        "name": "SaaS/Enterprise Sales",
         "level": "90%"
       },
       {
