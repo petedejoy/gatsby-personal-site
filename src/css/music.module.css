@@ -6,7 +6,7 @@
   width: 100%;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
 }
 
 .headshot {
@@ -15,7 +15,7 @@
   margin-right: auto;
   width: 20%;
   padding-top: 4rem;
-  transform: rotate(0deg);
+  /* transform: rotate(0deg); */
 }
 
 .intro {
