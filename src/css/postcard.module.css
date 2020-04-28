@@ -18,6 +18,7 @@
   font-weight: 600;
   padding-bottom: .5rem;
   display: inline-block;
+  line-height: 2rem;
 }
 
 .info h6 {
@@ -47,6 +48,7 @@
   box-shadow: 2px 2px 2px var(--darkGrey);
   cursor:pointer;
   letter-spacing: 1.5px;
+  margin-bottom: 1rem !important;
 }
 .link{
   background: var(--mainBlack);

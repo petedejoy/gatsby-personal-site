@@ -3,6 +3,8 @@ import Columns from "react-columns"
 import styles from "../css/resume.module.css"
 import { useStaticQuery } from "gatsby"
 import classnames from "classnames"
+import { Helmet } from "react-helmet"
+import aboutMeta from "../images/about-meta.png"
 
 const Resume = ({ resume }) => {
   const getResume = graphql`
@@ -28,6 +30,15 @@ const Resume = ({ resume }) => {
 
   return (
     <section id="resume">
+      <Helmet>
+        <meta charSet='utf-8' />
+        <meta property="og:title" content="Pete DeJoy | About"/>
+        <meta property="og:description" content="A bit about me, including work history, education, and skillset."/>
+        <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${aboutMeta}`} />
+        <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/about`} />
+        <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${aboutMeta}`} />
+        <meta name="twitter:card" content='summary_large_image' />
+      </Helmet>
       <div className="intro">A bit more about me.</div>
       <div className={classnames("row", styles.work)}>
         <div className="three columns header-col">

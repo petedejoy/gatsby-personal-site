@@ -1,0 +1,37 @@
+.button {
+    padding: .5rem .6rem;
+    display: inline-block;
+    color: var(--mainWhite);
+    text-decoration: none;
+    -webkit-transition: 800ms ease all;
+    transition: 800ms ease all;
+    font: 1rem "leitura-news", sans-serif;
+    font-weight: 500;
+    /* box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--darkGrey); */
+    /* border: 1px solid var(--mainBlack); */
+    justify-content: center;
+    box-shadow: 2px 2px 2px var(--darkGrey);
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    width: 9rem;
+    background-color: var(--redBrown);
+}
+
+.form {
+
+}
+
+.contactText {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  color: var(--mainWhite);
+  max-width: 50rem;
+  margin: auto;
+  line-height: 2rem;
+}
+
+.inputs {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

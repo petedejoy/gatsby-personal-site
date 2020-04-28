@@ -19,7 +19,7 @@ const Header = ({ menuLinks }) => (
             <ResponsiveMenu
               menuOpenButton={<div><MdMenu/></div>}
               menuCloseButton={<div><MdClose /></div>}
-              changeMenuOn="600px"
+              changeMenuOn="700px"
               largeMenuClassName={styles.largeMenu}
               smallMenuClassName={styles.smallMenu}
               menu={

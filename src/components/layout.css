@@ -12,7 +12,7 @@
   --darkGrey: #8e8e8e;
   --lightBlue: #8fcdef;
   --darkBlue: #3772FF;
-  --darkerBlue: #1f2870;
+  --darkerBlue: #302c43;
   --lightGreen: #62bddb;
   --redBrown: #805c77;
 
@@ -55,6 +55,13 @@ p {
   font: 18px/24px "calluna", sans-serif;
   line-height: 1.5;
   margin-bottom: 1.5rem;
+}
+
+figcaption {
+  font: 12px/24px "calluna", sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--darkGrey);
 }
 
 ol {
@@ -158,6 +165,64 @@ blockquote {
   padding-bottom: 2rem;
 }
 
+/**
+ * tooltiptext Styles
+ */
+
+ .tooltip {
+  display:inline-block;
+  position:relative;
+  border-bottom:1px dotted var(--darkBlue);
+  text-align:left;
+}
+
+.tooltip .top {
+  min-width:400px;
+  max-width:600px;
+  top:-20px;
+  left:50%;
+  transform:translate(-30%,-100%);
+  padding:10px 20px;
+  color:var(--mainWhite);
+  background-color: var(--darkBlue);
+  font-weight:normal;
+  font-size:10px;
+  border-radius:8px;
+  position:absolute;
+  z-index:99999999;
+  box-sizing:border-box;
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+  display:none;
+}
+
+.tooltip:hover .top {
+  display:block;
+}
+
+.tooltip .top i {
+  position:absolute;
+  top:100%;
+  left:30%;
+  margin-left:-15px;
+  width:30px;
+  height:15px;
+  overflow:hidden;
+}
+
+.tooltip .top i::after {
+  content:'';
+  position:absolute;
+  width:15px;
+  height:15px;
+  left:50%;
+  transform:translate(-50%,-50%) rotate(45deg);
+  background-color: var(--darkBlue);
+  box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+
+
+
 /* default Globals
  --------------------------------------------------------------- */
 
@@ -167,6 +232,15 @@ blockquote {
   margin: 0 auto;
 }
 
+.post-image {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 1
+}
+
+.padding-bottom {
+  padding-bottom: 2rem;
+}
 /* fixed width for IE8 */
 
 .ie .row {
@@ -613,4 +687,30 @@ blockquote {
   margin-left: auto !important;
   margin-right: auto !important;
   text-align: center !important;
+}
+
+/* CSS for contact form */
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+label {
+  color: var(--mainWhite);
+}
+@media only screen and (max-width: 600px) {
+  input[type=text], input[type=email] {
+    width: 200%;
+  }
+  .info li {
+    font-size: 1rem;
+    border-right: none;
+  }
 }

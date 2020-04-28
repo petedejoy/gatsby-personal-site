@@ -4,7 +4,8 @@ import "./layout.css"
 import { StaticQuery } from "gatsby"
 import Header from "./Header"
 import Footer from "./Footer"
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet'
+import homeMeta from "../images/home-meta.png"
 
 const layout = ({ children }) => (
   <StaticQuery
@@ -13,6 +14,7 @@ const layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            description
             menuLinks {
               name
               link
@@ -24,8 +26,14 @@ const layout = ({ children }) => (
     render={data => (
       <React.Fragment>
         <Helmet>
-          <meta charSet='utf-8' />
+        <meta charSet='utf-8' />
           <title>{data.site.siteMetadata.title}</title>
+          <meta property="og:title" content={data.site.siteMetadata.title} />
+          <meta property="og:description" content={data.site.siteMetadata.description} />
+          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${homeMeta}`} />
+          <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com`} />
+          <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${homeMeta}`} />
+          <meta name="twitter:card" content='summary_large_image' />
         </Helmet>
         <Header
           menuLinks={data.site.siteMetadata.menuLinks}
@@ -40,7 +48,7 @@ const layout = ({ children }) => (
         >
           {children}
         </div>
-        <Footer/>
+        <Footer />
       </React.Fragment>
     )}
   />
