@@ -60,7 +60,7 @@ h1 {
 .intro {
   color: var(--mainBlack);
   text-decoration: none;
-  font-family: leitura-news;
+  font-family: baskerville-urw, serif;
   font-weight: 300;
   font-style: normal;
   font-size: 56px;
@@ -89,7 +89,7 @@ h1 {
 .subtitle {
   color: var(--mainBlack);
   text-decoration: none;
-  font-family: leitura-news;
+  font-family: baskerville-urw;
   font-weight: 300;
   font-style: normal;
   font-size: 30px;

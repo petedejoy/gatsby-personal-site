@@ -21,38 +21,38 @@
 body {
   background: var(--mainWhite);
   font-size: 1.5rem;
-  font-family: calluna, serif;
+  font-family: baskerville-urw, serif;
   text-align: left;
 }
 
 h1 {
-  font: 30px/24px "li", sans-serif;
-  font-weight: 700;
+  font: 30px/24px "baskerville-urw", serif;
+  font-weight: 300;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 h2 {
-  font: 26px/24px "leitura-news", sans-serif;
+  font: 26px/24px "baskerville-urw", sans-serif;
   font-weight: 600;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 h3 {
-  font: 20px/24px "leitura-news", sans-serif;
+  font: 20px/24px "baskerville-urw", sans-serif;
   font-weight: 600;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 h4 {
-  font: 20px/24px "leitura-news", sans-serif;
+  font: 20px/24px "baskerville-urw", sans-serif;
   font-weight: 500;
 }
 
 p {
-  font: 18px/24px "calluna", sans-serif;
+  font: 18px/24px "baskerville-urw", serif;
   line-height: 1.5;
   margin-bottom: 1.5rem;
 }
@@ -65,7 +65,7 @@ figcaption {
 }
 
 ol {
-  font: 17px/24px "calluna", sans-serif;
+  font: 17px/24px "baskerville-urw", serif;
   line-height: 1.5;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -116,7 +116,7 @@ blockquote {
 .intro {
   color: var(--mainBlack);
   text-decoration: none;
-  font-family: leitura-news;
+  font-family: baskerville-urw;
   font-weight: 300;
   font-style: normal;
   font-size: 56px;
