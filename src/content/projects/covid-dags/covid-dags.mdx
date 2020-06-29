@@ -1,0 +1,16 @@
+---
+title: COVID Data Aggregation
+description: "Airflow DAGs to aggregate state-level COVID data in S3 and push it to a Snowflake database."
+slug: covid-dags
+image: "./covid-dags.png"
+type: project
+link: "https://github.com/astronomer/airflow-covid-data"
+order: 3
+tools: [Airflow, Python, SQL, Amazon S3, Snowflake]
+---
+
+## What is it?
+
+A repo of Apache Airflow DAGs that fetch and aggregate daily state-related COVID data from the [covidtracking.com API](https://covidtracking.com), push that data as a series of CSV files to [Amazon S3](https://aws.amazon.com/s3/), and then load those CSVs downstream into [Snowflake](https://snowflake.com) tables using the [S3 to Snowflake Transfer Operator](https://github.com/apache/airflow/pull/6469/files).
+
+These DAGs are used for various Airflow trainings and help explain the fundamentals of Airflow from the ground up.
