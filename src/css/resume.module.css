@@ -6,8 +6,8 @@
 }
 
 .underline {
-  border-bottom: 3px solid var(--darkBlue);
-  padding-bottom: 6px;
+  border-bottom: 2px solid var(--darkerBlue);
+  padding-bottom: 3px;
 }
 
 .markdownStyling h2 {
@@ -33,9 +33,9 @@
   padding-bottom: 3rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid var(--darkBlue);
+  border-bottom: 1px solid var(--darkerBlue);
 }
 
 .work {
-  border-top: 1px solid var(--darkBlue);
+  border-top: 1px solid var(--darkerBlue);
 }
