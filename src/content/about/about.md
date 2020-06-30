@@ -5,7 +5,7 @@ image: "../../images/honeypie.JPG"
 date: 2019-06-02
 author: Pete
 ---
-I currently work for a startup called [Astronomer](https://astronomer.io). We are a scrappy and globally distributed team working hard to make [Apache Airflow](https://airflow.apache.org/) the future of workflow orchestration.
+I currently work on product at [Astronomer](https://astronomer.io). We are a globally-distributed team working hard to make [Apache Airflow](https://airflow.apache.org/) the future of workflow orchestration.
 
 I dove into a sales role out of college, but quickly found myself spending the majority of my time writing code as the roller coaster of early-stage startup life landed our team with limited technical bandwidth. I wear a lot of different hats, but these days my job most resembles that of a technical product manager- I act as a technical resource to the Growth team and translate what I hear in the sales conversations into React, Node, and other various front and back end frameworks to make sure our product experience aligns with the market. I'm stoked about technical problem solving and am always eager to learn about new technologies.
 
