@@ -21,7 +21,7 @@ const About = ({ children }) => {
   return (
     <section id="about">
     <div className={styles.freeze}>
-    <img src={headshot} className={styles.headshot} />
+    {/* <img src={headshot} className={styles.headshot} /> */}
       <h1 className={styles.intro}>Hello, I'm Pete.</h1>
       <h3 className={styles.subtitle}>
         I'm a full stack engineer and product manager with a passion for growing
