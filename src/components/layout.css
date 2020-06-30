@@ -27,7 +27,7 @@ body {
 
 h1 {
   font: 30px/24px "baskerville-urw", serif;
-  font-weight: 300;
+  font-weight:300;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -116,16 +116,16 @@ blockquote {
 .intro {
   color: var(--mainBlack);
   text-decoration: none;
-  font-family: baskerville-urw;
-  font-weight: 300;
+  font-family: baskerville-urw, serif;
+  font-weight: 200 !important;
   font-style: normal;
-  font-size: 56px;
-  letter-spacing: 0em;
+  font-size: 48px;
+  letter-spacing: .03em;
   line-height: 1.4em;
   text-transform: none;
-  color: var(--mainBlack);
   text-align: center;
-  padding: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
 }
 
 @media only screen and (max-width: 600px) {

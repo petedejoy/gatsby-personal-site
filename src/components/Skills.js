@@ -64,7 +64,7 @@ const Resume = ({ resume }) => {
   return (
     <section id="resume">
       <div className={classnames("row", styles.skills)}>
-        <div className="intro">Some skills I've picked up through the years.</div>
+        <div className="intro">Some tools I like working with.</div>
           <div className={styles.bars}>
             <Columns number="3">
               <div>

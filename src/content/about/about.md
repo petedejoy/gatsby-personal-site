@@ -1,7 +1,7 @@
 ---
 title: About Me
 slug: about
-image: "../../images/acadia.jpg"
+image: "../../images/honeypie.JPG"
 date: 2019-06-02
 author: Pete
 ---

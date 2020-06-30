@@ -10,11 +10,15 @@
     /* box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--darkGrey); */
     /* border: 1px solid var(--mainBlack); */
     justify-content: center;
-    box-shadow: 2px 2px 2px var(--darkGrey);
     cursor: pointer;
     letter-spacing: 1.5px;
     width: 9rem;
-    background-color: var(--redBrown);
+    border-radius: 7px;
+    background-color: var(--darkBlue);
+}
+
+.button:hover {
+  background-color: var(--lightBlue);
 }
 
 .form {

@@ -9,7 +9,7 @@ import Image from "gatsby"
 
 const Footer = () => (
   <div className={styles.footer}>
-  <div className={styles.footerImage} />
+  {/* <div className={styles.footerImage} /> */}
   <header>
     <ContactForm />
     <div className={styles.center}>
