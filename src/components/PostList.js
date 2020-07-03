@@ -18,7 +18,7 @@ const PostList = ({ posts }) => {
         <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${writingMeta}`} />
         <meta name="twitter:card" content='summary_large_image' />
       </Helmet>
-      <h1 className="intro">Technology, Business, Music, Mental Health, and Everything In-Between.</h1>
+      <h1 className="intro">Technology, business, music, mental health, and everything in-between.</h1>
       <div className={styles.center}>
         {posts.map(({ node }, index) => {
           return <PostCard key={index} post={node} />
