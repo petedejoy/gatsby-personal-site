@@ -1,0 +1,155 @@
+---
+title: A Short History of MongoDB
+slug: mongodb
+description: "Unpacking the product strategy that shaped a winner."
+image: "./images/mongo.png"
+date: 2020-08-01
+author: Pete DeJoy
+type: blog
+---
+
+## The Humble Beginnings
+
+In 2007, Eliot Horowitz, Dwight Merriman, and Kevin Ryan had just had their adtech startup, Doubleclick, acquired by Google and were looking for their next challenge. The world was moving increasingly online, and these three found themselves extremely close to early developments in web development that would lead into the golden age of frameworks and toolkits for productive application development on the web.
+
+With that, they started 10gen, a platform-as-a-service company looking to build a web-centric platform-as-a-service using only open source components. They raised $81 million in venture funding right off the bat; something about good track records or whatever.yes
+
+As they dug in and began to build the stack of tools that would amass to the 10gen PaaS, they stumbled across an interesting trend: up until that point, web developers had almost exclusively used relational databases as “one-size-fits-all” solutions for building web applications. Relational databases are great, but they had been around for 40+ years and were not well-equipped to handle the horizontal scale that they saw as a prerequisite to building applications for modern [web-scale](https://www.youtube.com/watch?v=b2F-DItXtZs).
+
+A lot of their frustrations were directed at the paradigm of vertical scale that had been popularized by commercial relational databases like Oracle, in which resources are thrown at a single instance of that database to scale it as more recordings flowed in (think: one very, very big computer powering a single database). At that point, the aggressive vertical scale of the database layer was generally accepted as a necessary evil to running a large application on the web; in fact, when AWS unveiled their MySQL-based database product (now RDS), they conveniently announced larger EC2 instances on the same day to prepare for the forecasted scale of the product’s usage.
+
+The 10gen team saw the world a bit differently; they figured that, if their platform was going to be well-prepared to handle the challenges that the next-gen internet would impose, it would need a database that scaled horizontally (ie. would run the database across multiple smaller computers with different information living on each one, like a spreadsheet with last names A-L on my laptop and a spreadsheet with last names M-Z on yours, both of which can be simultaneously queried for users with the same birthday). This would be no easy feat; relational databases were the de-facto way to run web apps, and building a relational database that can scale horizontally is extraordinarily complex for a few reasons:
+
+
+1. Their rigid structure is very difficult to change in production; when you change information across tables, you need to lock those tables simultaneously to ensure consistent updates. If I’m on a digital marketing team and want to A/B test forms without worrying about schema inconsistencies, I need a backend engineer to help me fit my data structure to my marketing database or need to perform a database migration to fit my final form.
+2. Distributed JOIN statements are really hard. [I needed some backup from twitte](https://twitter.com/JamesTimmins/status/1282538970119725056)r to wrap my head around why exactly that is, but it turns out that, if certain data lives on certain nodes and can’t really be joined in-memory, it has to be pulled to another machine that is coordinating the query to actually do the join. There are some tools (memsql, apache ignite) that are trying to tackle this problem, but in 2007 it was unchartered territory.
+
+So they decided to build MongoDB: a horizontally-scalable NoSQL database to run at the core of the 10gen platform.
+
+Founder Eliot Horowitz recounts this phase as follows:
+
+“MongoDB was born out of our frustration using tabular databases in large, complex production deployments. We set out to build a database that we would want to use, so that whenever developers wanted to build an application, they could focus on the application, not on working around the database.”
+
+Pretty quickly, the market reacted and gave them indicators that they were not the only ones experiencing this problem; in 2008 they open-sourced MongoDB and shifted to focusing all of their energy around the maintenance, development, and support of the project. Even until late 2011, the only product offerings that Mongo advertised on their website were support, professional services, and training for the open-source project itself:
+
+
+![alt_text](images/image1.png "image_tooltip")
+
+
+## Licensing: Entirely Uninteresting ##
+
+Before continuing further, I just want to call attention to the fact that the MongoDB project was open-sourced under the [GNU Affero General Public License](https://en.wikipedia.org/wiki/GNU_Affero_General_Public_License) (AGPL). I won’t get too deep into the specifics here, but all you really need to know is that the AGPL allows for all of the things you’d expect from an open-source license _except_ that the AGPL license must extend to all derivative works (new distributions, modifications, etc). This essentially means that any forks or projects that are built around MongoDB also must be fully open-sourced.
+
+However, Mongo noted in their open-source documentation that “In some cases, we may have alternative licenses available for AGPL licensed code.” That gave them the creative freedom to “break the rules” and build derivative products that were not governed by the AGPL. As Ben Thompson pointed in his legendary_ [AWS, MongoDB, and the Economic Realities of Open Source](https://stratechery.com/2019/aws-mongodb-and-the-economic-realities-of-open-source/), _this addendum formed the basis for MongoDB’s entire business.
+
+## When Engineers Rebrand
+
+By the time 2013 rolled around, 10gen had started to dip its toes into a new collection of subscription products and offered a few additional features alongside their existing support/services/training offerings. Namely, they had launched:
+
+
+
+*   [Enterprise](https://web.archive.org/web/20130629154143/http://www.10gen.com/products/mongodb-enterprise): A semi-abstract offering that seemed to be a separate mongo distribution with some enterprise-y features. Namely, the enterprise distro included kerberos integration, shipped with an on-prem monitoring service, SNMP support, and additional testing.
+*   [Monitoring](https://web.archive.org/web/20130629170619/http://www.10gen.com/products/mongodb-monitoring-service): A free cloud-based service for monitoring MongoDB deployments from a centralized SaaS control plane. This presumably was the beginning of what would later become Mongo Cloud Manager- more on that later.
+*   [Backup service](https://web.archive.org/web/20130629154248/http://www.10gen.com/products/mongodb-backup-service): A cloud service for backing up and restoring MongoDB. It seems like Mongo just exported everything from a given Mongo deployment to their servers and exposed that information to their customers via HTTPS.
+
+Soon thereafter, in late 2013, they rebranded their company to MongoDB Inc. Interestingly, with that rebrand, they combined their backup service and monitoring tool into [MongoDB Management Service (MMS)](https://web.archive.org/web/20131101183631/https://www.mongodb.com/products/mongodb-management-service), which extended the scope of these offerings into new territories. Per its new definition, MMS would be “a suite of services for managing MongoDB deployments, providing monitoring, backup, and recovery to help users optimize clusters and mitigate operational risk.” It would be available as a fully managed Cloud service or as on-prem software included in an Enterprise subscription.
+
+To put it simply, the team had decided to go all-in on the observability and reliability layer of running MongoDB at scale. MMS was a way to expose that layer to as much of the market as possible.
+
+## Growing up
+
+By the time 2015 had rolled around, Mongo had simplified the packaging of its offerings significantly. While the services they offered still looked quite similar to their predecessors under-the-hood, they now were advertised as follows:
+
+
+
+*   [MongoDB Enterprise Advanced](https://web.archive.org/web/20150116202041/https://www.mongodb.com/products/mongodb-enterprise-advanced): “The best way to run MongoDB in your data center. Supported. Secure. Certified. MongoDB Enterprise Advanced is a finely-tuned package of advanced software, support, certifications, and other services that’s designed for the way you do business.”
+    *   This was very, very similar to v1 of their enterprise subscription; an abstract set of products and services that help provide an extra layer of security and presumably help run mongo on-premises.
+*   [MMS](https://web.archive.org/web/20150116202041/https://www.mongodb.com/products/mongodb-enterprise-advanced): “The easiest way to run mongodb. MMS is a cloud service that makes it easy for you to provision, monitor, backup, and scale MongoDB on the infrastructure of your choice” (wow this sounds familiar to astro)
+    *   They rebranded MMS to be a cloud-only offering and decoupled the on-prem MMS offering into their Enterprise Advanced package. At this point, MMS was only optimized for AWS; it worked by installing agents into your mongo servers and having those agents phone home to a controller that relayed metadata about the health of those mongo shards back to the control plane.
+
+This was an interesting subtle change in the presentation of their SKUs; I suspect that they saw industry trends pointing to a more effective strategy that bundled all on-prem offerings, including the MMS that had previously been offered independently as an on-prem deployment, into their Enterprise subscription.
+
+## Services: VC’s hate ‘em, sales guys love ‘em
+
+In early 2016, Mongo introduced a more service-heavy product called [MongoDB Professional](https://web.archive.org/web/20151202005936/https://www.mongodb.com/products/mongodb-professional). This product would go beyond the Enterprise Advanced subscription and provide more than just break/fix support. Per their website:
+
+> “MongoDB Professional gives you on-demand peace of mind. If anything ever goes wrong, the engineers who build MongoDB will help you resolve issues fast. We guarantee an initial response within 2 hrs for blocking issues, 24 x 365, anywhere around the world. MongoDB Professional goes beyond just break/fix support. Tell us where you want your application to go. We’ll tell you how to get there and how to avoid bumps in the road. Ask us for advice at any stage of your application lifecycle – from initial design to scale out.”
+
+It’s certainly a bit abstract, but that description makes it sound more akin to architectural consulting, solution architecting _around_ MongoDB, and top-tier support for the MongoDB project. It seems as if they started getting pushed for more hands-on knowledge sharing and solution-scoping than they had baked into their Enterprise Advanced subscription.
+
+Their product marketing team also introduced this absolutely epic slogan that I think perfectly appeals to their entire TAM with a single sentence:
+
+
+![alt_text](images/image2.png "image_tooltip")
+
+
+## At Last, Atlas
+
+In June of 2016, Eliot Horowitz put out [a press release](https://www.mongodb.com/blog/post/announcing-mongodb-atlas-database-as-a-service-for-mongodb) announcing MongoDB Atlas: the simplest, most robust, and most cost-effective way to run MongoDB in the Cloud. 
+
+If you’re familiar with the developer tool space, you’re undoubtedly familiar with the Atlas deployment model and how it’s changed the game in terms of industry perception of SaaS.
+
+For those not familiar, imagine the simplicity of a fully managed SaaS offering with the security and latency-eliminating glory of an on-prem deployment: Atlas allows you to spin up a MongoDB server with a click of a button that _peers_ to your VPC and runs in the same region and cloud as your data. Additionally, because it’s software that is run, managed, and administered by the Mongo team, they’re able to automate a lot of the operational nightmares associated with deploying and scaling a database; tasks such as database configuration, infrastructural provisioning, patches, scaling events, and backups are taken care of out-of-the-box. At the time that Atlas was introduced, software deployment was a bit more binary; it was run either:
+
+
+
+*   **As SaaS: **Software that fully hosted by a vendor, users access software over the public internet and don’t need to install anything (think Mongo’s MMS). SaaS was easier to use, but large enterprises with big budgets are often SaaS-averse because of internal mandates that data can’t be exposed to the public internet.
+*   **As PaaS/IaaS: **Software that is designed to be deployed to a customer’s datacenter or cloud-based servers running in their VPC (think Mongo’s Enterprise Advanced). This model is a bit more complex and requires more service work to deploy, but since it runs within the customer’s VPC it often is more attractive to security-conscious enterprises.
+
+Atlas provided a revolutionary hybrid; users could now get the ease of a SaaS offering with the security of a VPC-deployed piece of software. This would serve as a tremendous easy-to-use entry point for community Mongo users to start running Mongo in production systems and fuel a product-led go-to-market strategy that emphasized self-service and bottoms-up adoption.
+
+## Sequoia Gets Paid
+
+On September 21, 2017, 10 years after its start, [MongoDB, Inc filed its S-1](https://www.sec.gov/Archives/edgar/data/1441816/000104746917006014/a2233365zs-1.htm) to prepare for an IPO. At the time, they had fundamentals that were quite compelling; 91% of their total revenue was pure software subscription, they had hit a 60% year-over-year revenue growth totaling $101.4 million at the end of the previous fiscal year, and they had acquired over 4300 paying customers including over half of the global Fortune 100s. In the S-1, they clearly delineate that their two main product lines are Atlas and Enterprise Advanced. Interestingly, the word “Atlas” is mentioned 69 times, more than twice the amount of times that “Enterprise Advanced” was mentioned.
+
+Now, keep in mind that the success of Atlas described above is purely in hindsight; at the time of their IPO a year after the Atlas launch, it seems that the Mongo team was still a bit unsure of how things would pan out. The below snippet is taken from their S-1 and suggests that, even though they had invested substantially in Atlas, they were still not completely sure that it was going to be their winning horse: \
+ \
+“We introduced MongoDB Atlas in June 2016. We have less experience marketing, determining pricing for and selling MongoDB Atlas, and we are still determining how to best market, price and support adoption of this offering. We have directed, and intend to continue to direct, a significant portion of our financial and operating resources to develop and grow MongoDB Atlas, including introducing a free tier of MongoDB Atlas to generate developer usage and awareness. Although MongoDB Atlas has seen rapid adoption since its commercial launch, we cannot guarantee that rate of adoption will continue at the same pace or at all. If we are unsuccessful in our efforts to drive customer adoption of MongoDB Atlas, or if we do so in a way that is not profitable or fails to compete successfully against our current or future competitors, our business, results of operations and financial condition could be harmed.“
+
+Regardless of their concerns, at the time of their IPO, they had over 1900 customers on Atlas and $2.1M in subscription revenue attributed to new Atlas adopters, which is pretty insane for only having 13 months of public operation and self-proclaiming that they didn’t yet know how to market and price the offering. It looked promising.
+
+The IPO proceeded and Mongo raised $192 million at a $1.2 billion valuation. The company’s shares began trading on October 19th, 2017 on the NASDAQ at $24/share.
+
+## What’s better than a unicorn?
+
+Well, 12 unicorns. Today, three years after their IPO MongoDB’s market cap is 12.6B and their shares are trading at $172/share. 700+% returns!
+
+So what’s happened between then and now? MongoDB Atlas happened, and it happened in a serious way. In 2018, Ben Thompson Noted in one of his daily updates:
+ 
+> “Second, while most of MongoDB’s revenue at its IPO was driven by enterprise subscriptions, the fastest growing part of its business by far is MongoDB Atlas, its database-as-a-service offering. The company wrote in its most recent [quarterly report](https://investors.mongodb.com/static-files/62233524-5523-4396-bca1-b9b8fc7c4811):
+
+ > We introduced MongoDB Atlas in June 2016. MongoDB Atlas is our cloud-hosted database-as-a-service (“DBaaS”) offering that includes comprehensive infrastructure and management of Community Server. During the three and nine months ended October 31, 2018, MongoDB Atlas revenue represented 22% and 18% of our total revenue, respectively, reflecting the continued growth of MongoDB Atlas since its introduction._
+
+ > This understates things: Atlas was only 8% of total revenue last year, which grew 57% year-over-year; that means that Atlas itself grew 330% year-over-year, from $3.3 million to $14.3 million. Of course cost of revenue grew 68% as well, thanks to a $4.1 million increase in hosting costs (AWS wins either way), but particularly given the addition of a free Atlas offering, those costs aren’t out of line.”
+
+In a daily update posted on June 10, 2020, he understated his understatement:
+
+> “Now that paragraph is the understatement: [last quarter](https://investors.mongodb.com/Cache/IRCache/41816e2a-ba57-c758-d70d-d86af5d1c1e1.pdf) Atlas was up to 42% of MongoDB’s revenue, having grown 76% year-over-year.”
+
+In last quarter’s 10-Q statement, Mongo claimed $130M in total revenue. If I’m crunching the numbers correctly, that suggests that Atlas had done almost $55M revenue, up from $2.1M at the time of their IPO. Additionally, they claimed on their Q4 2020 earnings call that they had over 15,400 customers on Atlas, up from 1900 at the time of the IPO. Just three years was all it took for over 25x revenue growth and 8x customer count.
+
+Maybe less exciting, but still noteworthy, is that they seem to have deprecated their Cloud Manager/MMS offering (although[ it’s still available if you dig deeply enough on their website](https://www.mongodb.com/cloud/cloud-manager)). This is an interesting move, as this was their true hybrid “bring-your-own Mongo” strategy. You would think that there are _always_ folks that _don’t_ want their deployment to be managed but still want a way to plug their existing servers into a remote monitoring setup. I’d hazard a guess that, as Atlas became more feature-rich, the Cloud Manager service became _much_ less compelling for folks running MongoDB in the Cloud (Atlas only works with the three major cloud providers), as the maintenance, administration, and deployment piece introduced so much room for error. To put it simply, if you use Mongo Atlas instead of bringing your own Mongo deployment, you don’t _need_ the observability features that Cloud Manager provides because you don’t need to deal with outages, patches, and uptime. Through that lens, Atlas becomes a much more compelling offering for anyone who wants to run Mongo in the cloud.
+
+Now there’s the question of user running Mongo in an on-prem datacenter that wants to use Cloud Manager as SaaS to monitor those instances; it seems as if they’ve abandoned that user segment by deprecating Cloud Manager. This feels like an obvious choice to me: if a user needs to keep their Mongo instance in their datacenter, are they really going to be comfortable exposing that instance to the public internet and sending metadata to Cloud Manager? Maybe in certain circumstances, but I’d bet that the majority of on-prem users (who also can’t use Atlas) would much prefer or even be required to host the management plane alongside those mongo instances in their datacenter, which is a feature included in the Enterprise Advanced subscription.
+
+**Great Success**
+
+Much of this section is inspired and influenced by ideas presented by [Ben Thompson’s analysis of the MongoDB playbook](https://stratechery.com/2020/mongodb-cloud-mongodb-versus-aws-mongodbs-playbook/?utm_source=Memberful&utm_campaign=5ae5176de6-daily_update_2020_06_10&utm_medium=email&utm_term=0_d4c7fece27-5ae5176de6-111142597), but I’ll try to explain things in the context of this analysis and not take too directly from him. MongoDB has had to make brilliant strategic moves to both fend off competing cloud providers while also explosively growing their user base and revenue. There are three major moves that they’ve made since IPO that have contributed to that 700+% returns for shareholders.
+
+**Licensing: Entirely uninteresting, until it saves the company**
+
+In early 2019, AWS launched [DocumentDB (with MongoDB compatibility)](https://aws.amazon.com/documentdb/) (yes, the bit in the parenthesis is actually part of the product name!). At the time, they published the following [on their blog](https://aws.amazon.com/blogs/aws/new-amazon-documentdb-with-mongodb-compatibility-fast-scalable-and-highly-available/):
+
+> “Today we are launching [Amazon DocumentDB (with MongoDB compatibility)](https://aws.amazon.com/documentdb/), a fast, scalable, and highly available document database that is designed to be compatible with your existing MongoDB applications and tools. Amazon DocumentDB uses a purpose-built SSD-based storage layer, with 6x replication across 3 separate Availability Zones. The storage layer is distributed, fault-tolerant, and self-healing, giving you the the performance, scalability, and availability needed to run production-scale MongoDB workloads.”
+
+If you’ll recall, MongoDB was initially governed by the AGPL license, which was quite permissive and left them vulnerable to this new AWS service; if AWS was able to just take the open source core and build a competing offering, MongoDB’s potential for differentiation (and thus existence) would be threatened in a serious way. To counter the threat, they got creative: they wrote their own new flavor of license called the [Server Side Public License (SSPL)](https://www.mongodb.com/licensing/server-side-public-license). I won’t go too deep into what the license actually stated, but it basically told Amazon (and any other commercial reseller) that, if they wanted to offer MongoDB-as-a-service, they had to also open-source their entire stacks. This was quite an interesting play, as it stopped AWS dead in their tracks, but it also offended many open-source purists and officially made MongoDB kind of not open-source. In fact, [MongoDB even withdrew the SSPL from the Open Source Initiave’s approval process](https://hub.packtpub.com/mongodb-withdraws-controversial-server-side-public-license-from-the-open-source-initiatives-approval-process/) and accepted their fate after [Red Hat dropped MongoDB from it’s RHEL distributions](https://www.zdnet.com/article/mongodb-open-source-server-side-public-license-rejected/). Some were really pissed that a publicly traded company could ever betray their open-source everything-is-free sensibilities (gasp), but life goes on.
+
+On October 16, 2018, the MongoDB Community Server releases began to be covered by the SSPL. Amazon’s DocumentDB still runs on the last available Mongo version governed by the AGPL and hasn’t had an update since this change was made.
+
+**You guessed it, MongoDB Atlas**
+
+Atlas is a revolutionary product that give users what they want: SaaS UX with beautifully effective VPC peering and latency-busting features.
+
+**Atlas again (well, kind of)**
+
+Mongo is focusing now on expanding Atlas even further to be unique and differentiated front eh core open-source project. I don’t suspect the database layer will be any different than core mongo, but they’re taking an integrated approach to building a BI layer, data layer, and data export layer to their Atlas stack; this will help them move up the stack and give them a full-stack solution that they can sell without actually selling MongoDB open-source and relying on pure bottoms-up adoption for revenue acquisition.
