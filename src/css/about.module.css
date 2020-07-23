@@ -38,6 +38,11 @@ h1 {
   padding-bottom: 3rem;
 }
 
+.hero {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
 .blur {
   /* -webkit-animation: text-focus-in .3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in .3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; */
@@ -60,11 +65,11 @@ h1 {
 .intro {
   color: var(--mainBlack);
   text-decoration: none;
-  font-family: leitura-news;
-  font-weight: 300;
+  font-family: baskerville-urw, serif;
+  font-weight: 200 !important;
   font-style: normal;
-  font-size: 56px;
-  letter-spacing: 0em;
+  font-size: 48px;
+  letter-spacing: .03em;
   line-height: 1.4em;
   text-transform: none;
   text-align: center;
@@ -89,7 +94,7 @@ h1 {
 .subtitle {
   color: var(--mainBlack);
   text-decoration: none;
-  font-family: leitura-news;
+  font-family: baskerville-urw;
   font-weight: 300;
   font-style: normal;
   font-size: 30px;

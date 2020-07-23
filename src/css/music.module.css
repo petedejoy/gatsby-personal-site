@@ -6,7 +6,7 @@
   width: 100%;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  transform: rotate(180deg)
+  /* transform: rotate(180deg); */
 }
 
 .headshot {
@@ -15,20 +15,21 @@
   margin-right: auto;
   width: 20%;
   padding-top: 4rem;
+  /* transform: rotate(0deg); */
 }
 
 .intro {
   color: var(--mainBlack);
   text-decoration: none;
-  font-family: leitura-news;
-  font-weight: 300;
+  font-family: baskerville-urw, serif;
+  font-weight: 200 !important;
   font-style: normal;
-  font-size: 56px;
-  letter-spacing: 0em;
+  font-size: 48px;
+  letter-spacing: .03em;
   line-height: 1.4em;
   text-transform: none;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 .body {
@@ -81,7 +82,7 @@
   font-family: leitura-news;
   font-weight: 300;
   font-style: normal;
-  font-size: 30px;
+  font-size: 26px;
   letter-spacing: 0em;
   line-height: 1.4em;
   text-transform: none;
