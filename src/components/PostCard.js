@@ -6,6 +6,7 @@ import { Link } from "gatsby"
 
 const PostCard = ({ post }) => {
   const { title, date, author, slug, description } = post.frontmatter
+  console.log(slug)
   const img = post.frontmatter.image.childImageSharp.fluid
   return (
     <article className={styles.card}>
@@ -19,7 +20,7 @@ const PostCard = ({ post }) => {
             <span>{date}</span>
           </h6>
           <p>{description}</p>
-          <Link to={slug} className={styles.link}>
+          <Link to={`/${slug}`} className={styles.link}>
             READ MORE{" "}
           </Link>
         </div>

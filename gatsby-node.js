@@ -48,7 +48,6 @@ exports.createPages = async ({ actions, graphql }) => {
     
     `)
   projects.forEach(({ node }) => {
-    console.log(node);
     const { slug } = node.frontmatter
     createPage({
       path: `projects/${slug}`,

@@ -8,7 +8,8 @@ import { Helmet } from "react-helmet"
 
 const PostTemplate = ({ data }) => {
   const { title, date, author, image, description, slug } = data.mdx.frontmatter
-  const { body } = data.mdx.code
+  const body = data.mdx.body
+  console.log(data.mdx.body);
   const img = image.childImageSharp.fluid
   return (
     <Layout>
@@ -56,9 +57,7 @@ export const query = graphql`
           }
         }
       }
-      code {
-        body
-      }
+      body
     }
   }
 `
