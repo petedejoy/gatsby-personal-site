@@ -8,7 +8,12 @@ import { Helmet } from "react-helmet"
 
 const PostTemplate = ({ data }) => {
   const { title, date, author, image, description, slug } = data.mdx.frontmatter
+<<<<<<< HEAD
   const { body }  = data.mdx
+=======
+  const body = data.mdx.body
+  console.log(data.mdx.body);
+>>>>>>> preview
   const img = image.childImageSharp.fluid
   return (
     <Layout>

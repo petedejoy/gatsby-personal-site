@@ -53,8 +53,7 @@ h4 {
 
 p {
   font: 18px/24px "baskerville-urw", serif;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
 }
 
 figcaption {
@@ -71,6 +70,14 @@ ol {
   padding-right: 3rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 85%;
+  height: 85%;
+  margin: auto;
+}
+
+ul {
+  font: 17px/24px "baskerville-urw", serif;
+  line-height: 1.5;
   width: 85%;
   height: 85%;
   margin: auto;

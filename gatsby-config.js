@@ -30,6 +30,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
+        defaultLayouts: {
+          posts: require.resolve("./src/templates/post-template.js"),
+          projects: require.resolve("./src/templates/project-template.js")
+        },
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,

@@ -8,7 +8,12 @@ import { Helmet } from "react-helmet"
 
 const ProjectTemplate = ({ data }) => {
   const { title, image, description, link, tools, slug } = data.mdx.frontmatter
+<<<<<<< HEAD
   const { body } = data.mdx
+=======
+  const body = data.mdx.body
+  console.log(data)
+>>>>>>> preview
   const img = image.childImageSharp.fluid
   const tool = tools ? tools.map((tool) =>
     <li>{tool}</li>
