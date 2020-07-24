@@ -3,13 +3,17 @@ import styles from "../css/postTemplate.module.css"
 import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import Layout from "../components/layout"
-import { MDXRenderer } from "gatsby-mdx"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Helmet } from "react-helmet"
 
 const PostTemplate = ({ data }) => {
   const { title, date, author, image, description, slug } = data.mdx.frontmatter
+<<<<<<< HEAD
+  const { body }  = data.mdx
+=======
   const body = data.mdx.body
   console.log(data.mdx.body);
+>>>>>>> preview
   const img = image.childImageSharp.fluid
   return (
     <Layout>
