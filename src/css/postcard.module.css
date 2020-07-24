@@ -23,14 +23,29 @@
 
 .info h6 {
   color: var(--darkGrey);
-  text-transform: capitalize;
-  font: 14px/24px "calluna", sans-serif;
+  padding-top: .5rem;
+  text-align: center;
+  font: 18px/24px "baskerville-urw", serif;
 }
+
 
 .info p {
   padding-top: .5rem;
   text-align: center;
   font: 18px/24px "baskerville-urw", serif;
+}
+
+/* Hacky way to align all buttons */
+.info > div {
+  width: 336px;
+}
+
+.cardLink {
+  text-decoration: none;
+}
+
+.cardLink:hover h6 {
+  color: var(--darkBlue);
 }
 
 .link {
@@ -45,7 +60,6 @@
   /* border: 1px solid var(--mainBlack); */
   justify-content: center;
   background-color: var(--mainBlack);
-  box-shadow: 2px 2px 2px var(--darkGrey);
   cursor:pointer;
   letter-spacing: 1.5px;
   margin-bottom: 1rem !important;
@@ -96,6 +110,6 @@
   .info {
     display: flex;
     align-items: center;
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 1.75rem;
   }
 }

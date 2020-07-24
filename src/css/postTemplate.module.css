@@ -26,6 +26,10 @@
   text-align: center;
 }
 
+.info p {
+  text-decoration: none;
+}
+
 .info h1 {
   color: var(--mainBlack);
   text-decoration: none;
@@ -38,6 +42,10 @@
   text-transform: none;
   text-align: center;
   padding-bottom: .5rem !important;
+}
+
+.description p {
+  text-decoration: none !important;
 }
 
 .content ul {
