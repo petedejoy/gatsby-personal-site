@@ -44,6 +44,10 @@
   text-decoration: none;
 }
 
+.cardLink:hover {
+  
+}
+
 .cardLink:hover h6 {
   color: var(--darkBlue);
 }
