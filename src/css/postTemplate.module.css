@@ -40,6 +40,14 @@
   padding-bottom: .5rem !important;
 }
 
+.content ul {
+  font: 17px/24px "baskerville-urw", serif;
+  line-height: 1.5;
+  width: 85%;
+  height: 85%;
+  margin: auto;
+}
+
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -50,7 +58,7 @@
 .info h3 {
   font: 22px/24px "baskerville-urw", serif;
   text-align: center;
-  padding-top 0rem !important;
+  padding-top: 0rem !important;
 }
 
 .info h4 {
