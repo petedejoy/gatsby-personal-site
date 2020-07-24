@@ -5,7 +5,19 @@
   text-align: center;
   box-shadow: .4rem .9rem 1.5rem .3rem var(--darkGrey);
   border-radius: 15px;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transform: translateZ(0);
+  transition-property: transform;
 }
+
+.card:hover,
+.card:focus,
+.card:active {
+    transform: scale(1.05);
+}
+
 
 .info {
   padding: 1rem 0;
@@ -42,10 +54,6 @@
 
 .cardLink {
   text-decoration: none;
-}
-
-.cardLink:hover {
-  
 }
 
 .cardLink:hover h6 {
