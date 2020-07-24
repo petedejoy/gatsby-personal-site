@@ -37,6 +37,7 @@
   line-height: 1.4em;
   text-transform: none;
   text-align: center;
+  padding-bottom: .5rem !important;
 }
 
 /* Tooltip container */
@@ -49,6 +50,7 @@
 .info h3 {
   font: 22px/24px "baskerville-urw", serif;
   text-align: center;
+  padding-top 0rem !important;
 }
 
 .info h4 {

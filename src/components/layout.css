@@ -76,6 +76,14 @@ ol {
   margin: auto;
 }
 
+ul {
+  font: 17px/24px "baskerville-urw", serif;
+  line-height: 1.5;
+  width: 85%;
+  height: 85%;
+  margin: auto;
+}
+
 li {
   padding-top: .5rem;
   padding-bottom: .5rem;
