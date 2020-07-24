@@ -15,9 +15,9 @@ const PostCard = ({ post }) => {
       <div className={styles.info}>
         <div>
           <h2>{title}</h2>
-          <h6>
+          {/* <h6>
             <span>{date}</span>
-          </h6>
+          </h6> */}
           <p>{description}</p>
           <Link to={`/${slug}`} className={styles.link}>
             READ MORE{" "}

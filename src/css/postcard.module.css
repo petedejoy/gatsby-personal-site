@@ -28,9 +28,9 @@
 }
 
 .info p {
-  padding-top: 1rem;
+  padding-top: .5rem;
   text-align: center;
-  font: 18px/24px "calluna", sans-serif;
+  font: 18px/24px "baskerville-urw", serif;
 }
 
 .link {
@@ -96,6 +96,6 @@
   .info {
     display: flex;
     align-items: center;
-    padding: 0 1.5rem;
+    padding: 0 0 0 2rem;
   }
 }
