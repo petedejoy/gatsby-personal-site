@@ -6,6 +6,8 @@ title: Resume - Work
 
 ### Product Manager
 
-I currently work at [Astronomer](https://astronomer.io), a fast-growing startup working to build a platform around the open-source project [Apache Airflow](https://http://airflow.apache.org).
+I was one of the first employees at [Astronomer](https://astronomer.io), a fast-growing startup working to build a platform around the open-source project [Apache Airflow](https://http://airflow.apache.org).
 
-In my tenure at Astronomer, I've served as a cross between a Platform Engineer, Product Manager, and Growth Manager. Currently, I'm focused on building features into our core product's React front end and Node back end to help smooth over and optimize conversion for trial users. I also am often on sales calls to walk through our techincal infrastrucure with enterprise DevOps teams.
+At Astronomer, I've worn many different hats but all have been close to our core product. Namely I've done stints as a Platform Engineer, Product Manager, Growth Manager, and Sales Engineer.
+
+Recently, I've been focused on scaling out our product strategy and working on the go-to-market for a new product offering. I am deeply embedded in engagements with some of our biggest enterprise prospects to architect solutions and translate enterprise organizational needs into strategic product decisions.
