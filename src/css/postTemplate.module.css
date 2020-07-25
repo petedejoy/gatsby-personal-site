@@ -26,6 +26,10 @@
   text-align: center;
 }
 
+.info p {
+  text-decoration: none;
+}
+
 .info h1 {
   color: var(--mainBlack);
   text-decoration: none;
@@ -37,6 +41,19 @@
   line-height: 1.4em;
   text-transform: none;
   text-align: center;
+  padding-bottom: .5rem !important;
+}
+
+.description p {
+  text-decoration: none !important;
+}
+
+.content ul {
+  font: 17px/24px "baskerville-urw", serif;
+  line-height: 1.5;
+  width: 85%;
+  height: 85%;
+  margin: auto;
 }
 
 /* Tooltip container */
@@ -49,6 +66,7 @@
 .info h3 {
   font: 22px/24px "baskerville-urw", serif;
   text-align: center;
+  padding-top: 0rem !important;
 }
 
 .info h4 {

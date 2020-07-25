@@ -8,6 +8,7 @@ const PostCard = ({ post }) => {
   const { title, date, author, slug, description } = post.frontmatter
   const img = post.frontmatter.image.childImageSharp.fluid
   return (
+    <Link to={`/${slug}`} className={styles.cardLink}>
     <article className={styles.card}>
       <div className={styles.image}>
         <Image fluid={img} />
@@ -15,16 +16,17 @@ const PostCard = ({ post }) => {
       <div className={styles.info}>
         <div>
           <h2>{title}</h2>
-          <h6>
+          {/* <h6>
             <span>{date}</span>
-          </h6>
-          <p>{description}</p>
-          <Link to={slug} className={styles.link}>
+          </h6> */}
+          <h6>{description}</h6>
+          {/* <Link to={`/${slug}`} className={styles.link}>
             READ MORE{" "}
-          </Link>
+          </Link> */}
         </div>
       </div>
     </article>
+    </Link>
   )
 }
 

@@ -3,12 +3,12 @@ import styles from "../css/postTemplate.module.css"
 import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import Layout from "../components/layout"
-import { MDXRenderer } from "gatsby-mdx"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Helmet } from "react-helmet"
 
 const PostTemplate = ({ data }) => {
   const { title, date, author, image, description, slug } = data.mdx.frontmatter
-  const { body } = data.mdx.code
+  const { body }  = data.mdx
   const img = image.childImageSharp.fluid
   return (
     <Layout>
@@ -56,9 +56,7 @@ export const query = graphql`
           }
         }
       }
-      code {
-        body
-      }
+      body
     }
   }
 `

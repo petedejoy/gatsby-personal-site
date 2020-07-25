@@ -3,12 +3,12 @@ import styles from "../css/projectTemplate.module.css"
 import { graphql } from "gatsby"
 import Image from "gatsby-image"
 import Layout from "../components/layout"
-import { MDXRenderer } from "gatsby-mdx"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Helmet } from "react-helmet"
 
 const ProjectTemplate = ({ data }) => {
   const { title, image, description, link, tools, slug } = data.mdx.frontmatter
-  const { body } = data.mdx.code
+  const { body } = data.mdx
   const img = image.childImageSharp.fluid
   const tool = tools ? tools.map((tool) =>
     <li>{tool}</li>
@@ -66,9 +66,7 @@ export const query = graphql`
           }
         }
       }
-      code {
-        body
-      }
+      body
     }
   }
 `
