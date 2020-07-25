@@ -25,7 +25,7 @@ The 10gen team saw the world a bit differently; they figured that, if their plat
 
 1. Their rigid structure is very difficult to change in production; when you change information across tables, you need to lock those tables simultaneously to ensure consistent updates. If I’m on a digital marketing team and want to A/B test forms without worrying about schema inconsistencies, I need a backend engineer to help me fit my data structure to my marketing database or need to perform a database migration to fit my updated data structure.
 
-2. Distributed JOIN statements are really hard. [I needed some backup from twitter](https://twitter.com/JamesTimmins/status/1282538970119725056)r to wrap my head around why exactly that is, but it turns out that, if certain data lives on certain nodes and can’t really be joined in-memory, it has to be pulled to another machine that is coordinating the query to actually do the join. There are some tools (memsql, apache ignite) that are trying to tackle this problem, but in 2007 it was unchartered territory.
+2. Distributed JOIN statements are really hard. [I needed some backup from twitter](https://twitter.com/JamesTimmins/status/1282538970119725056) to wrap my head around why exactly that is, but it turns out that, if certain data lives on certain nodes and can’t really be joined in-memory, it has to be pulled to another machine that is coordinating the query to actually do the join. There are some tools (memsql, apache ignite) that are trying to tackle this problem, but in 2007 it was unchartered territory.
 
 So they decided to build MongoDB: a horizontally-scalable NoSQL database to run at the core of the 10gen platform.
 
