@@ -4,7 +4,7 @@ title: Resume - Work
 
 ## Astronomer :rocket:
 
-### Technical Product Manager
+### Product Manager
 
 I currently work at [Astronomer](https://astronomer.io), a fast-growing startup working to build a platform around the open-source project [Apache Airflow](https://http://airflow.apache.org).
 
