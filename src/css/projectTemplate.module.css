@@ -64,6 +64,10 @@ ul {
   margin-bottom: 1.5rem !important;
 }
 
+ul > li {
+  padding-bottom: 0rem !important;
+}
+
 
 .textList{
   width: 85%
