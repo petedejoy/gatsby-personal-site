@@ -81,7 +81,7 @@
 }
 
 .content h2 {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 @media only screen and (max-width: 600px) {
