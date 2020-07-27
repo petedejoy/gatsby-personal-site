@@ -85,7 +85,7 @@ Their product marketing team also introduced this absolutely epic slogan that I 
 
 <img src={mongo2} className="row" />
 
-## Ai
+## Atlas
 
 In June of 2016, Eliot Horowitz put out [a press release](https://www.mongodb.com/blog/post/announcing-mongodb-atlas-database-as-a-service-for-mongodb) announcing MongoDB Atlas: the simplest, most robust, and most cost-effective way to run MongoDB in the Cloud. 
 
@@ -112,7 +112,7 @@ The IPO proceeded and Mongo raised $192 million at a $1.2 billion valuation. The
 
 ### What's better than a unicorn?
 
-Well, 12 unicorns. Today, three years after their IPO MongoDB’s market cap is 12.6B and their shares are trading at $172/share. 700+% return!
+Well, 12 unicorns. Today, three years after their IPO MongoDB’s market cap is 12.6B and their shares are trading at $172/share. 700+% return :shocked_face_with_exploding_head:!
 
 So what’s happened between then and now? MongoDB Atlas happened, and it happened in a serious way. In 2018, Ben Thompson noted in one of his daily updates:
 
@@ -152,4 +152,27 @@ Atlas is a revolutionary product that give users what they want: SaaS UX with be
 
 ### Atlas again (well, kind of)
 
-Mongo is focusing now on expanding the core of Atlas even further to be unique and differentiated from the core open-source MongoDB Community Server. I don’t suspect the database layer will be much different than core mongo, but they’re taking an integrated approach to building a BI layer, data layer, and data export layer to their Atlas stack; this will help them move up the stack and give them a full-stack solution that they can sell without actually selling MongoDB open-source and relying on pure bottoms-up adoption for revenue acquisition.
+An interesting recent development is that Mongo is focusing on expanding Atlas further to be significantly more expansive than attractive deployment service for the core open-source MongoDB Community Server; they’re taking a fully-integrated approach and building a BI layer, data layer, and data export layer as a strategic move to bring Atlas up the data stack. 
+
+On June 9th 2020 at the [MongoDB Live conference event](https://onlinexperiences.com/scripts/Server.nxp?LASCmd=L:0&AI=1&ShowKey=93108&LoginType=0&InitialDisplay=1&ClientBrowser=0&DisplayItem=NULL&LangLocaleID=0&SSO=1&RFR=https://onlinexperiences.com/Launch/Event.htm?ShowKey=93108), the team announced some major product moves, including general availability of three new offerings:
+
+:one:**[Atlas Data Lake](https://www.mongodb.com/atlas/data-lake)**
+
+A fully-integrated data lake for storing fully unstructured and non-transactional data, with additional features that allow users to query and analyze data across AWS S3 and Atlas using MongoDB Query Language. Fully serverless and priced based on total number of queries run.
+
+:two:**[Atlas Search](https://www.mongodb.com/atlas/search)**
+
+A rich search engine for data living in Atlas, making it easier for data analysts to formulate complex MQL queries.
+
+:three:**[MongoDB Realm](https://www.mongodb.com/realm)**
+
+In May of 2019, MongoDB [announced it’s 39 million dollar acquisition](https://www.youtube.com/watch?v=WEL28rrG3DQ) of [Realm](realm.io), an object-driven database for mobile application development. In their world keynote discussing the acquisition, their synergy is explained: Realm really set out to solve the same problem as MongoDB (application developers like working with objects rather than structured data) but in the mobile space. With that, they made the acqsition, hoping to keep Realm the same while also adding some new features that allow it to function as the cornerstone for modern mobile application development:
+
+* Backups
+  * :thought_balloon: Think :thought_balloon:: You switch (upgrade?) from an Android to an iPhone and maintain all of the metadata associated with your mobile applications, like your library of podcasts or your place in an audiobook.
+* Cross-Device Sync
+  * :thought_balloon: Think :thought_balloon:: Switching from your iPhone to your iPad mid workstream on a sketchpad app and having your iPad be ready to pick up where you left off immediately.
+* Web-App Integration
+  * :thought_balloon: Think :thought_balloon:: Using a web and ios app with the same centralized database so that you can have a clean and unified experience that translates from the browser to an iOS app.
+
+With these three major announcements, Mongo is moving into uncharted territory and expanding their horizons quite a bit into both the integrated data platform and mobile development spaces. They’re leveraging the explosive success of Atlas to become the common API for storing, accessing, analyzing, and updating both mobile and web application data.

@@ -82,6 +82,10 @@ li {
   padding-bottom: .5rem;
 }
 
+li > p {
+  margin-bottom: 0rem;
+}
+
 a {
   color: var(--darkerBlue);
 }

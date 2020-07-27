@@ -1,3 +1,5 @@
+const emoji = require(`remark-emoji`)
+
 module.exports = {
   siteMetadata: {
     title: `Pete DeJoy | Personal Site`,
@@ -17,12 +19,12 @@ module.exports = {
         link: "/projects",
       },
       {
-        name:"music",
-        link:"/music",
+        name: "music",
+        link: "/music",
       },
       {
-        name:"writing",
-        link:"/writing",
+        name: "writing",
+        link: "/writing",
       }
     ],
   },
@@ -30,10 +32,31 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
+        remarkPlugins: [emoji],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
           },
+          {
+            resolve: 'gatsby-remark-emojis',
+            options: {
+              // Deactivate the plugin globally (default: true)
+              active: true,
+              // Add a custom css class
+              class: 'emoji-icon',
+              // Select the size (available size: 16, 24, 32, 64)
+              size: 64,
+              // Add custom styles
+              styles: {
+                display: 'inline',
+                margin: '0',
+                // 'margin-top' : '1px',
+                position: 'relative',
+                top: '5px',
+                width: '25px'
+              }
+            }
+          }
         ],
       },
     },
@@ -46,19 +69,19 @@ module.exports = {
           resolve: 'gatsby-remark-emojis',
           options: {
             // Deactivate the plugin globally (default: true)
-            active : true,
+            active: true,
             // Add a custom css class
-            class  : 'emoji-icon',
+            class: 'emoji-icon',
             // Select the size (available size: 16, 24, 32, 64)
-            size   : 64,
+            size: 64,
             // Add custom styles
-            styles : {
-              display      : 'inline',
-              margin       : '0',
+            styles: {
+              display: 'inline',
+              margin: '0',
               // 'margin-top' : '1px',
-              position     : 'relative',
-              top          : '5px',
-              width        : '25px'
+              position: 'relative',
+              top: '5px',
+              width: '25px'
             }
           }
         },
@@ -71,7 +94,7 @@ module.exports = {
             related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
             noIframeBorder: true //Optional: Disable insertion of <style> border: 0
           }
-        },] 
+        },]
       }
     },
     {

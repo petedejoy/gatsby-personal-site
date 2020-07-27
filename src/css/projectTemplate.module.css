@@ -56,9 +56,14 @@ button:hover:before,button:hover:after{
 }
 
 li {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
 }
+
+ul {
+  margin-bottom: 1.5rem !important;
+}
+
 
 .textList{
   width: 85%
