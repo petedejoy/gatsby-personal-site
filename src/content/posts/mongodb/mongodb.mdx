@@ -14,6 +14,7 @@ import realm from "./images/mongo_realm.png"
 import mongoStars from "./images/mongo_stars.png"
 
 import MongoChart from "../../../components/charts/MongoRevenue.js"
+import MongoChart2 from "../../../components/charts/MongoRevenueStars.js"
 
 
 ## The Beginnings
@@ -122,9 +123,12 @@ Well, first and foremost, the open-source MongoDB project exploded in popularity
 <img src={mongoStars} className="row"/>
 <figcaption>The star count on the mongo repo has almost doubled since their IPO, suggesting accelerated developer adoption of the open-source technology.</figcaption>
 
-If we view annual revenue since IPO, the correlation becomes obvious:
+Now, zooming in on that star growth since IPO and superimposing it on top of quarter-over-quarter revenue:
 
-<MongoChart></MongoChart>
+<MongoChart2/>
+<figcaption>Star counts are approximate.</figcaption>
+
+Naturally there are many other factors contributing to revenue growth, but popularity of the open-source distribution is a good proxy for rate of bottoms-up product adoption, which correlates pretty directly to revenue.
 
 Secondly, MongoDB Atlas happened, and it happened in a serious way. In 2018, Ben Thompson noted in one of his daily updates:
 

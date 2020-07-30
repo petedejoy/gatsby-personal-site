@@ -26,9 +26,13 @@ body {
   text-align: left;
 }
 
+text {
+  fill: var(--darkGrey);
+}
+
 tspan {
   background: var(--mainWhite);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: baskerville-urw, serif;
   text-align: left;
 }
