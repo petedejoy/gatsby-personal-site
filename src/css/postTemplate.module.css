@@ -80,6 +80,11 @@
   margin: 2rem 0;
 }
 
+.chart {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .content h2 {
   /* text-decoration: underline; */
 }

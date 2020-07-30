@@ -11,6 +11,10 @@ type: blog
 import mongo1 from "./images/mongo1.png"
 import mongo2 from "./images/mongo2.png"
 import realm from "./images/mongo_realm.png"
+import mongoStars from "./images/mongo_stars.png"
+
+import MongoChart from "../../../components/charts/MongoRevenue.js"
+
 
 ## The Beginnings
 
@@ -111,7 +115,18 @@ The IPO proceeded and Mongo raised $192 million at a $1.2 billion valuation. The
 
 Well, 12 unicorns. Today, three years after their IPO MongoDB’s market cap is 12.6B and their shares are trading at $172/share. 700+% return :shocked_face_with_exploding_head:!
 
-So what’s happened between then and now? MongoDB Atlas happened, and it happened in a serious way. In 2018, Ben Thompson noted in one of his daily updates:
+So what’s happened between then and now?
+
+Well, first and foremost, the open-source MongoDB project exploded in popularity. A strong community presence, developer-first mentality, and strong bottoms-up product adoption strategy paid off drove general developer adoption of MongoDB, which pays dividends for long-term product-led growth. The below chart of the MongoDB repository's Github stars paints a picture of how open-source adoption can translate to strong revenue growth.
+
+<img src={mongoStars} className="row"/>
+<figcaption>The star count on the mongo repo has almost doubled since their IPO, suggesting accelerated developer adoption of the open-source technology.</figcaption>
+
+If we view annual revenue since IPO, the correlation becomes obvious:
+
+<MongoChart></MongoChart>
+
+Secondly, MongoDB Atlas happened, and it happened in a serious way. In 2018, Ben Thompson noted in one of his daily updates:
 
 > “Second, while most of MongoDB’s revenue at its IPO was driven by enterprise subscriptions, the fastest growing part of its business by far is MongoDB Atlas, its database-as-a-service offering. The company wrote in its most recent [quarterly report](https://investors.mongodb.com/static-files/62233524-5523-4396-bca1-b9b8fc7c4811):
 >
@@ -125,7 +140,7 @@ In a daily update posted on June 10, 2020, he highlighted the revolution of his 
 
 In last quarter’s 10-Q statement, Mongo claimed $130M in total revenue, with 42% of that revenue being attributed to Atlas. If I’m crunching the numbers correctly, that suggests that Atlas had done almost $55M revenue, up from $2.1M at the time of their IPO. Additionally, they claimed on their Q4 2020 earnings call (MongoDB Inc has a weird fiscal year that ends on January 31st) that they had over 15,400 customers on Atlas, up from 1900 at the time of the IPO. Just three years was all it took for over 25x revenue growth and 8x customer count.
 
-Maybe less exciting, but still noteworthy, is that they seem to have deprecated their Cloud Manager/MMS offering (although[ it’s still available if you dig deeply enough on their website](https://www.mongodb.com/cloud/cloud-manager)). This is interesting from a go-to-market perspective, as Cloud Manager was their last shred of true hybrid “bring-your-own Mongo” strategy. You would think that there are _always_ folks that _don’t_ want their deployment to be managed but still want a way to plug their existing servers into a remote monitoring setup. I’d hazard a guess that, as Atlas became more feature-rich, the Cloud Manager service became _much_ less compelling for folks running MongoDB in the Cloud (Atlas only works with the three major cloud providers), as the maintenance, administration, and deployment piece introduced so much room for error that it no longer made sense to administer their own server. To put it simply, if you use Mongo Atlas instead of bringing your own Mongo deployment, you don’t _need_ the observability features that Cloud Manager provides because you don’t need to deal with outages, patches, and uptime. Through that lens, Atlas becomes a much more compelling offering for anyone who wants to run Mongo in the cloud.
+Maybe less exciting, but still noteworthy, is that they seem to have deprecated their Cloud Manager/MMS offering (although[it’s still available if you dig deeply enough on their website](https://www.mongodb.com/cloud/cloud-manager)). This is interesting from a go-to-market perspective, as Cloud Manager was their last shred of true hybrid “bring-your-own Mongo” strategy. You would think that there are _always_ folks that _don’t_ want their deployment to be managed but still want a way to plug their existing servers into a remote monitoring setup. I’d hazard a guess that, as Atlas became more feature-rich, the Cloud Manager service became _much_ less compelling for folks running MongoDB in the Cloud (Atlas only works with the three major cloud providers), as the maintenance, administration, and deployment piece introduced so much room for error that it no longer made sense to administer their own server. To put it simply, if you use Mongo Atlas instead of bringing your own Mongo deployment, you don’t _need_ the observability features that Cloud Manager provides because you don’t need to deal with outages, patches, and uptime. Through that lens, Atlas becomes a much more compelling offering for anyone who wants to run Mongo in the cloud.
 
 Still, there is a subset of the market that has been abandoned by the move away from Cloud Manager: the user running Mongo in an on-prem datacenter that wants to use a remote SaaS tool to monitor those instances. Abandoning that market segment feels like a choice that was likely influenced by internal compliance standards of enterprises running Mongo on-prem; if a team needs to keep their Mongo instance in their datacenter, are they really going to be comfortable exposing their database nodes to the public internet and sending metadata to Cloud Manager? Maybe in certain circumstances, but I’d bet that the majority of on-prem users (who also can’t use Atlas _yet_) would have compliance mandates requiring to host the management plane alongside those mongo instances within their private subnets, which is a feature included in the Enterprise Advanced subscription.
 

@@ -26,6 +26,13 @@ body {
   text-align: left;
 }
 
+tspan {
+  background: var(--mainWhite);
+  font-size: 1.2rem;
+  font-family: baskerville-urw, serif;
+  text-align: left;
+}
+
 h1 {
   font: 30px/24px "baskerville-urw", serif;
   font-weight:300;
@@ -138,6 +145,10 @@ blockquote > blockquote {
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 5rem;
+}
+
+recharts-wrapper {
+  padding-top: 1rem;
 }
 
 @media only screen and (max-width: 600px) {
