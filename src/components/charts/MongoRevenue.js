@@ -41,8 +41,8 @@ export default () => (
                 <Tooltip />
                 <Bar
                     dataKey="Revenue"
-                    stroke="#3772FF"
-                    fill="#3772FF"
+                    stroke="#302c43"
+                    fill="#302c43"
                 />
                 <Line type="monotone" dataKey="revenue" stroke="#82ca9d" />
                 {/* </LineChart> */}
