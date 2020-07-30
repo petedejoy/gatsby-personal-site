@@ -83,10 +83,30 @@
 .chart {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 750px;
+  height: 400px;
 }
 
 .content h2 {
   /* text-decoration: underline; */
+}
+
+@media only screen and (max-width: 650px) {
+  .chart {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 300px !important;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .chart {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 500px;
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 600px) {

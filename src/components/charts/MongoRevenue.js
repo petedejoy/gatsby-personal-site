@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "../../css/postTemplate.module.css"
 import {
+    ResponsiveContainer,
     LineChart,
     BarChart,
     Line,
@@ -31,8 +32,9 @@ const data = [
 ]
 export default () => (
     <div className={styles.chart}>
-        <BarChart width={750} height={400} data={data}>
-            {/* <LineChart width={750} height={400} data={data}> */}
+        <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={data}>
+                {/* <LineChart width={750} height={400} data={data}> */}
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="year" label={{ value: 'Year', dy: 20 }} height={50} />
                 <YAxis label={{ value: 'Revenue in Millions', angle: -90, position: 'insideLeft', dy: 100 }} width={80} />
@@ -43,7 +45,8 @@ export default () => (
                     fill="#3772FF"
                 />
                 <Line type="monotone" dataKey="revenue" stroke="#82ca9d" />
-            {/* </LineChart> */}
-        </BarChart>
+                {/* </LineChart> */}
+            </BarChart>
+        </ResponsiveContainer>
     </div>
 )

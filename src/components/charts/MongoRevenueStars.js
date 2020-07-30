@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import styles from "../../css/postTemplate.module.css"
 import {
-  ComposedChart, Line, Area, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
+  ResponsiveContainer, ComposedChart, Line, Area, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
   Legend, Scatter,
 } from 'recharts';
 
@@ -46,24 +46,26 @@ export default class Example extends PureComponent {
 
   render() {
     return (
-      <ComposedChart
-        width={750}
-        height={400}
-        data={data}
-        margin={{
-          top: 20, right: 20, bottom: 20, left: 20,
-        }}
-      >
-        <CartesianGrid stroke="#f5f5f5" />
-        <XAxis dataKey="name" />
-        <YAxis yAxisId="left" orientation="left" label={{ value: 'Revenue in Millions', angle: -90, position: 'insideLeft', dy: 75 }} width={60} />
-        <YAxis yAxisId="right" orientation="right" label={{ value: 'Github Stars on OSS MongoDB', angle: -90, position: 'outsideRight', dx: 40 }} width={60}/>
-        <Tooltip />
-        <Legend align="center" verticalAlign="bottom" width={900}/>
-        <Bar yAxisId="left" dataKey="revenue" barSize={70} fill="#302c43" />
-        <Line yAxisId="right" type="linear" dataKey="stars" stroke="#3772FF" />
-        {/* <Scatter dataKey="cnt" fill="red" /> */}
-      </ComposedChart>
+      <div className={styles.chart}>
+        <ResponsiveContainer width="100%" height="100%">
+          <ComposedChart
+            data={data}
+            margin={{
+              top: 20, right: 20, bottom: 20, left: 20,
+            }}
+          >
+            <CartesianGrid stroke="#f5f5f5" />
+            <XAxis dataKey="name" />
+            <YAxis yAxisId="left" orientation="left" label={{ value: 'Revenue in Millions', angle: -90, position: 'insideLeft', dy: 75 }} width={60} />
+            <YAxis yAxisId="right" orientation="right" label={{ value: 'Github Stars on OSS MongoDB', angle: -90, position: 'outsideRight', dx: 40 }} width={60} />
+            <Tooltip />
+            <Legend align="center" verticalAlign="bottom" width="110%" />
+            <Bar yAxisId="left" dataKey="revenue" barSize={70} fill="#302c43" />
+            <Line yAxisId="right" type="linear" dataKey="stars" stroke="#3772FF" />
+            {/* <Scatter dataKey="cnt" fill="red" /> */}
+          </ComposedChart>
+        </ResponsiveContainer>
+      </div>
     );
   }
 }
