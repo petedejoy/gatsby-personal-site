@@ -6,6 +6,7 @@
 
 :root {
   --mainGrey: #eaeaea;
+  --mainGreyDark: #d6d6d6;
   --mainWhite: #fdfdfd;
   --offWhite: #f6efeb;
   --mainBlack: #3f3f3f;
@@ -21,6 +22,17 @@
 body {
   background: var(--mainWhite);
   font-size: 1.5rem;
+  font-family: baskerville-urw, serif;
+  text-align: left;
+}
+
+text {
+  fill: var(--darkGrey);
+}
+
+tspan {
+  background: var(--mainWhite);
+  font-size: 1rem;
   font-family: baskerville-urw, serif;
   text-align: left;
 }
@@ -81,6 +93,10 @@ li {
   padding-bottom: .5rem;
 }
 
+li > p {
+  margin-bottom: 0rem;
+}
+
 a {
   color: var(--darkerBlue);
 }
@@ -101,9 +117,16 @@ table, th, td {
 
 blockquote {
   margin: 1rem 0;
-  padding: 1.5rem 1rem 0.15rem 2rem;
+  padding: 1.5rem 2rem 0.15rem 2rem;
   border-left: 5px solid var(--darkBlue);
   background-color: var(--mainGrey);
+}
+
+blockquote > blockquote {
+  margin: 1rem 0;
+  padding: 1.5rem 1rem 0.15rem 2rem;
+  border-left: 5px solid var(--darkerBlue);
+  background-color: var(--mainGreyDark);
 }
 
 .about {
@@ -126,6 +149,10 @@ blockquote {
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 5rem;
+}
+
+recharts-wrapper {
+  padding-top: 1rem;
 }
 
 @media only screen and (max-width: 600px) {

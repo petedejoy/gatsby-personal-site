@@ -27,7 +27,7 @@
       },
       {
         "name": "Python",
-        "level": "40%"
+        "level": "60%"
       },
       {
         "name": "SQL",
@@ -54,12 +54,20 @@
       {
         "name": "PostgreSQL",
         "level": "50%"
+      },
+      {
+        "name": "Kubernetes",
+        "level": "50%"
       }
     ],
     "skills": [
       {
         "name": "SaaS/Enterprise Sales",
         "level": "90%"
+      },
+      {
+        "name": "Solution Architecting",
+        "level": "70%"
       },
       {
         "name": "Product Management",

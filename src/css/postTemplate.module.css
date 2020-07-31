@@ -70,7 +70,6 @@
 }
 
 .info h4 {
-  letter-spacing: 1px;
   text-transform: capitalize;
   font: 14px/24px "leitura-news", sans-serif;
   text-align: center;
@@ -81,15 +80,40 @@
   margin: 2rem 0;
 }
 
+.chart {
+  width: 750px;
+  height: 400px;
+}
+
 .content h2 {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+}
+
+@media only screen and (max-width: 650px) {
+  .chart {
+    width: 300px !important;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .chart {
+    width: 500px;
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .info h1 {
-    font: 35px/24px "leitura-news", sans-serif;
+    font: 38px/24px "baskerville-urw", serif;
     font-weight: 700;
     line-height: 2.5rem;
+  }
+  .info h3 {
+    font: 18px/24px "baskerville-urw", serif;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-top: .5rem;
   }
   .info ul {
     display: flex;
@@ -108,6 +132,9 @@
     padding: 0rem;
   }
   .content td {
+    padding: 0rem;
+  }
+  .template {
     padding: 0rem;
   }
 }
