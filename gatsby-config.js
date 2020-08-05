@@ -62,6 +62,7 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gastby-plugin-sitemap`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {

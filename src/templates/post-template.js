@@ -21,6 +21,7 @@ const PostTemplate = ({ data }) => {
           <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/${slug}`} />
           <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${img.src}`} />
           <meta name="twitter:card" content='summary_large_image' />
+          <link rel="canonical" href={`https://${process.env.GATSBY_DOMAIN}.com/${slug}`} />
         </Helmet>
       <section className={styles.template}>
         <div className={styles.info}>
