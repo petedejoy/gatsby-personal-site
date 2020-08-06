@@ -18,7 +18,7 @@ const PostTemplate = ({ data }) => {
           <meta property="og:title" content={title}/>
           <meta property="og:description" content={description}/>
           <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${img.src}`} />
-          <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/${slug.src}`} />
+          <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/writing/${slug}`} />
           <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${img.src}`} />
           <meta name="twitter:card" content='summary_large_image' />
         </Helmet>
