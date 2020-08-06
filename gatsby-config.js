@@ -63,6 +63,8 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     'gatsby-plugin-netlify',
+    `gatsby-plugin-sitemap`,
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {

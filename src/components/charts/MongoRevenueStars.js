@@ -57,7 +57,7 @@ export default class Example extends PureComponent {
             <CartesianGrid stroke="#f5f5f5" />
             <XAxis dataKey="name" />
             <YAxis yAxisId="left" orientation="left" label={{ value: 'Revenue in Millions', angle: -90, position: 'insideLeft', dy: 75 }} width={60} />
-            <YAxis yAxisId="right" orientation="right" label={{ value: 'Github Stars on OSS MongoDB', angle: -90, position: 'outsideRight', dx: 40 }} width={60} />
+            <YAxis yAxisId="right" orientation="right" label={{ value: 'Github Stars on OSS MongoDB', angle: -90, dx: 40 }} width={60} />
             <Tooltip />
             <Legend align="center" verticalAlign="bottom" width="110%" />
             <Bar yAxisId="left" dataKey="revenue" barSize={70} fill="#302c43" />
