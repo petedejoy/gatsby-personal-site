@@ -8,7 +8,7 @@ const PostCard = ({ post }) => {
   const { title, date, author, slug, description } = post.frontmatter
   const img = post.frontmatter.image.childImageSharp.fluid
   return (
-    <Link to={`/${slug}`} className={styles.cardLink}>
+    <Link to={`/writing/${slug}`} className={styles.cardLink}>
     <article className={styles.card}>
       <div className={styles.image}>
         <Image fluid={img} />
