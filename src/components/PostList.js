@@ -8,7 +8,7 @@ import writingMeta from "../images/writing-meta.png"
 
 const PostList = ({ posts }) => {
   return (
-    <section>
+    <section id="Writing">
       <Helmet>
         <meta charSet='utf-8' />
         <meta property="og:title" content="Pete DeJoy | Writing"/>
