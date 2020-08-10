@@ -29,12 +29,23 @@ input::placeholder {
     width: 15rem;
     height: 2.5rem;
     border-radius: 7px;
-    background-color: var(--darkBlue);
+    background-color: var(--mainBlack);
     margin-bottom: .5rem;
 }
 
+.button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:5px;
+    height:2px;
+    width:0;
+    background: var(--darkBlue);
+    transition:400ms ease all;
+  }
+
 .button:hover {
-  background-color: var(--lightBlue);
+  background-color: var(--darkBlue);
 }
 
 .label {
