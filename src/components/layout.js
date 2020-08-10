@@ -28,6 +28,8 @@ const layout = ({ children }) => (
         <Helmet>
         <meta charSet='utf-8' />
           <title>{data.site.siteMetadata.title}</title>
+          <meta property="description" content={data.site.siteMetadata.description} />
+          <meta name="google-site-verification" content="jjT2-lKf4sbcAUMVcK3pOa_0nfWTGaPpVIaS6E38ZUw" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:description" content={data.site.siteMetadata.description} />
           <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${homeMeta}`} />
