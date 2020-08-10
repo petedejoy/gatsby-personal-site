@@ -6,7 +6,7 @@ const MailingList = () => {
   return (
     <div className={styles.container}>
       <form className={styles.form} name="mailing" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value="mailing" />
         <div className={classnames(styles.padding)}>
           <p className={classnames(styles.label)}>
              <input type="email" name="email" placeholder="Email" className={styles.input} />
