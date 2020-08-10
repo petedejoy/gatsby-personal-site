@@ -1,0 +1,76 @@
+.padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.label > input {
+  width: 30rem;
+  max-width: 35rem;
+}
+
+input::placeholder {
+    color: var(--darkGrey);
+  }
+
+.button {
+    padding: .5rem .6rem;
+    display: inline-block;
+    color: var(--mainWhite);
+    text-decoration: none;
+    -webkit-transition: 800ms ease all;
+    transition: 800ms ease all;
+    font: 1rem "leitura-news", sans-serif;
+    font-weight: 500;
+    /* box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--darkGrey); */
+    /* border: 1px solid var(--mainBlack); */
+    justify-content: center;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    background-color: var(--darkBlue);
+    margin-bottom: .5rem;
+}
+
+.button:hover {
+  background-color: var(--lightBlue);
+}
+
+.label {
+    color: var(--mainBlack);
+}
+
+.form {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .form {
+      display: block;
+    }
+    .button {
+        width: 30rem;
+    }
+    .label > input {
+        margin-bottom: 0rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .form {
+      display: block;
+    }
+    .button {
+        width: 15rem;
+    }
+    .label > input {
+        width: 15rem;
+    }
+  }

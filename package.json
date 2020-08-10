@@ -16,6 +16,7 @@
     "@mdx-js/mdx": "^1.6.14",
     "@mdx-js/react": "^1.6.14",
     "@mdx-js/tag": "^0.20.3",
+    "@mitchallen/react-email-input-field": "^0.1.6",
     "@raae/gatsby-remark-oembed": "^0.1.1",
     "change-case": "^3.1.0",
     "classnames": "^2.2.6",

@@ -38,20 +38,20 @@ button:before,button:after{
   content:'';
   position:absolute;
   top:0;
-  right:0;
+  right:5px;
   height:2px;
   width:0;
-  background: var(--darkBlue);
+  background: var(--lightBlue);
   transition:400ms ease all;
 }
 button:after{
   right:inherit;
   top:inherit;
-  left:0;
+  left:5px;
   bottom:0;
 }
 button:hover:before,button:hover:after{
-  width:100%;
+  width:50%;
   transition:800ms ease all;
 }
 
