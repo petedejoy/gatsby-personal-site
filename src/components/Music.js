@@ -23,21 +23,22 @@ const Music = ({ children }) => {
     <section id="Music">
       <Helmet>
         <meta charSet='utf-8' />
-          <meta property="og:title" content="Pete DeJoy | Music"/>
-          <meta property="og:description" content="I'm an aspiring vintage guitar collector and bedroom musician. In my free time, I make instagram videos."/>
-          <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${musicMeta}`} />
-          <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/music`} />
-          <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${musicMeta}`} />
-          <meta name="twitter:card" content='summary_large_image' />
+        <title>Music | Pete DeJoy</title>
+        <meta property="og:title" content="Pete DeJoy | Music" />
+        <meta property="og:description" content="I'm an aspiring vintage guitar collector and bedroom musician. In my free time, I make instagram videos." />
+        <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${musicMeta}`} />
+        <meta property="og:url" content={`https://${process.env.GATSBY_DOMAIN}.com/music`} />
+        <meta name="twitter:image" content={`https://${process.env.GATSBY_DOMAIN}.com${musicMeta}`} />
+        <meta name="twitter:card" content='summary_large_image' />
       </Helmet>
-    <div>
-      <h1 className={styles.intro}>Some of my tunes.</h1>
-      <h3 className={styles.subtitle}>
-        I'm a bedroom guitarist and aspiring vintage guitar collector. In my free time, I make Instagram videos.
+      <div>
+        <h1 className={styles.intro}>Some of my tunes.</h1>
+        <h3 className={styles.subtitle}>
+          I'm a bedroom guitarist and aspiring vintage guitar collector. In my free time, I make Instagram videos.
       </h3>
       </div>
       <img src={guitars} className={styles.guitars} alt="Guitars" />
-      <hr/>
+      <hr />
       <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
     </section>
   )

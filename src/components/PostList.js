@@ -10,6 +10,7 @@ const PostList = ({ posts }) => {
     <section id="Writing">
       <Helmet>
         <meta charSet='utf-8' />
+        <title>Writing | Pete DeJoy</title>
         <meta property="og:title" content="Pete DeJoy | Writing" />
         <meta property="og:description" content="Musings on technology, business, music, mental health, and everything in-between." />
         <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${writingMeta}`} />
