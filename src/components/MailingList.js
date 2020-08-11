@@ -9,7 +9,7 @@ const MailingList = () => {
         <input type="hidden" name="mailing" value="mailing" />
         <div className={classnames(styles.padding)}>
           <p className={classnames(styles.label)}>
-             <input type="email" name="mailing-email" placeholder="Email" className={styles.input} />
+             <input required type="email" name="mailing-email" placeholder="Email" className={styles.input} />
           </p>
         </div>
         <div className={classnames(styles.padding)}>
