@@ -11,7 +11,7 @@
   --offWhite: #f6efeb;
   --mainBlack: #3f3f3f;
   --darkGrey: #8e8e8e;
-  --lightBlue: #8fcdef;
+  --lightBlue: #759FBC;
   --darkBlue: #3772FF;
   --darkerBlue: #302c43;
   --lightGreen: #62bddb;
@@ -578,7 +578,7 @@ recharts-wrapper {
 
 @media only screen and (max-width: 767px) {
   .row {
-    width: 460px;
+    max-width: 460px !important;
     margin: 0 auto;
     padding: 0;
   }
@@ -591,7 +591,7 @@ recharts-wrapper {
   }
   .row .row {
     width: auto;
-    max-width: none;
+    max-width: 460px !important;
     margin: 0 -30px;
   }
   [class*="column"]+[class*="column"]:last-child {
@@ -639,9 +639,9 @@ recharts-wrapper {
 /* mobile narrow
  --------------------------------------------------------------- */
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 400px) {
   .row {
-    width: auto;
+    max-width: 300px !important;
   }
 }
 

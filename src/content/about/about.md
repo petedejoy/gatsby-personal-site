@@ -5,16 +5,12 @@ image: "../../images/honeypie.JPG"
 date: 2019-06-02
 author: Pete
 ---
-I currently work on product at [Astronomer](https://astronomer.io). We are a globally-distributed team working hard to make [Apache Airflow](https://airflow.apache.org/) the future of workflow orchestration.
+I work on product at [Astronomer](https://astronomer.io). We are a globally-distributed team working hard to make [Apache Airflow](https://airflow.apache.org/) the future of workflow orchestration.
 
-My startup journey began in sales, but I quickly found myself spending the majority of my time writing code as the roller coaster of early-stage startup life landed our team with limited technical bandwidth. I wear a lot of different hats, but these days my job most resembles that of a technical product manager; I work as an embedded technical resource on our growth team and translate market trends into strategic product decisions. I enjoy rolling up my sleeves and writing code when I can.
+As I've watched the Astronomer team grow from 6 to 60 and beyond, I've worn quite a few different hats across our sales, product, and engineering teams. These days, I spend my time building and shipping products that help enable experience around complementary tools and frameworks in the modern data stack. While I admittedly don't get quite as much programming time in my day-to-day as I once did, I've spent the majority of my career writing code in javascript and python-based frameworks and enjoy rolling up my sleeves when the time and opportunity present themselves.
 
-In college, I played varsity football, helped run the Club Alpine Ski Team, studied Chemistry and Physics, played in a band, and took as many music theory classes as my schedule would allow. Early aspirations of becoming a doctor landed my academic focus on experimental science, but I changed my trajectory about halfway through my college career when I had my first brushes with entrepreneurship.
+Having spent my entire career surrounded by brilliant software developers has made me realize one thing: I'm deeply inspired by hands-on creators with unwavering belief in their ideas. I'm passionate about building high-leverage tools that help enable those folks to build more efficiently and effectively and I plan on pursuing that mission for many years to come.
 
-I realized that _building things_ is what really gets me excited.
+In a past life, I played football and was a competitive ski racer. My academic years were spent toiling with physics and chemistry, but most of that intellectual real-estate has since been replaced by distributed systems, microservice architectures, and Stack Overflow posts.
 
-The startup bug pushed me to pursue a fellowship with [Venture for America](https://ventureforamerica.org). VFA is an awesome organization that supports aspiring entrepreneurs as they attempt to make their lofty dreams a reality. The fellowship is the reason that I moved to Cincinnati after graduation with no ties to the Midwest.
-
-I now feel strongly that more people should spend time in the Midwest.
-
-I am a New Yorker by birth, a Vermonter by childhood circumstance, a Mainer by education, and, currently, a Cincinnatian by choice. I call myself "location-agnostic" with respect to my lifestyle and am a firm believer that adventure awaits everywhere.
+Outside of work, I'm into vintage guitars, the state of Vermont (although I don't live there), music theory, big mountain skiing, and spending inordinate amounts of energy building hobbyist software projects that no one will ever use.

@@ -29,9 +29,10 @@ const Resume = ({ resume }) => {
   const education = response.allMarkdownRemark.edges[3].node.html
 
   return (
-    <section id="resume">
+    <section id="Resume">
       <Helmet>
         <meta charSet='utf-8' />
+        <title>About | Pete DeJoy</title>
         <meta property="og:title" content="Pete DeJoy | About"/>
         <meta property="og:description" content="A bit about me, including work history, education, and skillset."/>
         <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${aboutMeta}`} />

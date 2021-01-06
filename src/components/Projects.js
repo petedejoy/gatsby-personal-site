@@ -18,6 +18,7 @@ const Projects = ({ projects }) => {
     <div className={styles.container} key={projects.name}>
       <Helmet>
         <meta charSet='utf-8' />
+        <title>Projects | Pete DeJoy</title>
         <meta property="og:title" content="Pete DeJoy | Projects"/>
         <meta property="og:description" content="Personal and professional projects that I've worked on. Mostly podcasting and programming."/>
         <meta property="og:image" content={`https://${process.env.GATSBY_DOMAIN}.com${projectsMeta}`} />
@@ -39,7 +40,7 @@ const Projects = ({ projects }) => {
       </div>)
   })
   return (
-    <div id="projects">
+    <div id="Projects">
       <div className="row"></div>
       <h1 className="intro">Some of my work.</h1>
       {project}
