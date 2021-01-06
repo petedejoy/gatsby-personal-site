@@ -25,13 +25,13 @@
 }
 
 .info h2 {
-  font-size: 30px;
   text-transform: capitalize;
-  font: 28px/24px;
+  font: 24px/20px;
   font-weight: 600;
   padding-bottom: .5rem;
   display: inline-block;
   line-height: 2rem;
+  font-family: "baskerville-urw", serif;
 }
 
 .info h6 {
@@ -57,9 +57,6 @@
   text-decoration: none;
 }
 
-.cardLink:hover h6 {
-  color: var(--darkBlue);
-}
 
 .link {
   padding: .5rem .6rem;
@@ -113,6 +110,10 @@
 
 .image > div > div {
   padding-bottom: 71.3542% !important;
+}
+
+.image > div > picture > img {
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 882px) {
