@@ -30,7 +30,7 @@ const PostTemplate = ({ data }) => {
             <span>{author}</span> | <span>{date}</span>
           </h4>
         </div>
-        <Image fluid={img} />
+        <Image fluid={img} className={styles.image} />
         <div className={styles.content}>
           <MDXRenderer>{body}</MDXRenderer>
         </div>

@@ -34,7 +34,7 @@
   color: var(--mainBlack);
   text-decoration: none;
   font-family: baskerville-urw, serif;
-  font-weight: 200 !important;
+  font-weight: 500 !important;
   font-style: normal;
   font-size: 48px;
   letter-spacing: .03em;
@@ -46,6 +46,10 @@
 
 .description p {
   text-decoration: none !important;
+}
+
+.image {
+  border-radius: 10px;
 }
 
 .content ul {
@@ -86,7 +90,14 @@
 }
 
 .content h2 {
-  /* text-decoration: underline; */
+  font-family: baskerville-urw, serif;
+  font-size: 30px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.content h3 {
+  font-family: baskerville-urw, serif;
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 650px) {
