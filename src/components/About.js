@@ -36,7 +36,7 @@ const About = ({ children }) => {
             bgColor="3f3f3f"
           />
           <SocialIcon
-            url="https://twitter.com/pdejoy58"
+            url="https://twitter.com/petedejoy"
             className={styles.icon}
             bgColor="3f3f3f"
           />
