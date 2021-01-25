@@ -28,7 +28,7 @@ const About = ({ children }) => {
         early-stage startups.
       </h3> */}
       </div>
-      <img src={acadia} className={styles.image} alt="Acadia" />
+      <img src={homepic} className={styles.image} alt="Acadia" />
       <div className={styles.social}>
           <SocialIcon
             url="https://github.com/petedejoy"
