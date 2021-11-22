@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import homepic from "../images/homepic.jpg"
+import homepic from "../images/homepic3.jpeg"
 import styles from "../css/about.module.css"
 import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
