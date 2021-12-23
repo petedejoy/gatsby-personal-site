@@ -18,20 +18,6 @@
   /* transform: rotate(0deg); */
 }
 
-.intro {
-  color: var(--mainBlack);
-  text-decoration: none;
-  font-family: baskerville-urw, serif;
-  font-weight: 200 !important;
-  font-style: normal;
-  font-size: 48px;
-  letter-spacing: .03em;
-  line-height: 1.4em;
-  text-transform: none;
-  text-align: center;
-  padding-top: 4rem;
-}
-
 .body {
   display: flex;
   flex-direction: column;
@@ -79,7 +65,7 @@
 .subtitle {
   color: var(--mainBlack);
   text-decoration: none;
-  font-family: leitura-news;
+  font-family: "Cardo";
   font-weight: 300;
   font-style: normal;
   font-size: 26px;
@@ -87,7 +73,7 @@
   line-height: 1.4em;
   text-transform: none;
   text-align: center;
-  padding-bottom: 2rem;
+  margin: -3rem 0 1rem 0;
 }
 
 .social {

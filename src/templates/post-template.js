@@ -25,10 +25,8 @@ const PostTemplate = ({ data }) => {
       <section className={styles.template}>
         <div className={styles.info}>
           <h1>{title}</h1>
-          <h3>{description}</h3>
-          <h4>
-            <span>{author}</span> | <span>{date}</span>
-          </h4>
+          <p>{description}</p>
+            <span>{author} | {date}</span>
         </div>
         <Image fluid={img} className={styles.image} />
         <div className={styles.content}>

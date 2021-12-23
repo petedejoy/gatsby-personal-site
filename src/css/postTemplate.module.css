@@ -27,37 +27,12 @@
 }
 
 .info p {
-  text-decoration: none;
-}
-
-.info h1 {
-  color: var(--mainBlack);
-  text-decoration: none;
-  font-family: baskerville-urw, serif;
-  font-weight: 500 !important;
-  font-style: normal;
-  font-size: 48px;
-  letter-spacing: .03em;
-  line-height: 1.4em;
-  text-transform: none;
-  text-align: center;
-  padding-bottom: .5rem !important;
-}
-
-.description p {
-  text-decoration: none !important;
+  margin: .5rem;
 }
 
 .image {
-  border-radius: 10px;
-}
-
-.content ul {
-  font: 17px/24px "baskerville-urw", serif;
-  line-height: 1.5;
-  width: 85%;
-  height: 85%;
-  margin: auto;
+  border-radius: 15px;
+  margin: 2rem 0 2rem 0;
 }
 
 /* Tooltip container */
@@ -67,19 +42,6 @@
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
-.info h3 {
-  font: 22px/24px "baskerville-urw", serif;
-  text-align: center;
-  padding-top: 0rem !important;
-}
-
-.info h4 {
-  text-transform: capitalize;
-  font: 14px/24px "leitura-news", sans-serif;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
 .content {
   margin: 2rem 0;
 }
@@ -87,17 +49,6 @@
 .chart {
   width: 750px;
   height: 400px;
-}
-
-.content h2 {
-  font-family: baskerville-urw, serif;
-  font-size: 30px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.content h3 {
-  font-family: baskerville-urw, serif;
-  font-size: 24px;
 }
 
 @media only screen and (max-width: 650px) {
@@ -115,30 +66,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .info h1 {
-    font: 38px/24px "baskerville-urw", serif;
-    font-weight: 700;
-    line-height: 2.5rem;
-  }
-  .info h3 {
-    font: 18px/24px "baskerville-urw", serif;
-    font-weight: 300;
-    line-height: 1.5rem;
-    margin-top: .5rem;
-  }
-  .info ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .info li {
-    font-size: 1rem;
-    border-right: none;
-  }
-  .content img {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
   .content table {
     padding: 0rem;
   }

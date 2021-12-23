@@ -28,15 +28,15 @@ const ProjectTemplate = ({ data }) => {
       <section className={styles.template}>
         <div className={styles.info}>
           <h1>{title}</h1>
-          <div className={styles.tools}>
+          <div className={styles.projectMeta} >
             {tools ?
               <ul>
                 {tool}
               </ul> : null}
-          </div>
           {link ? <a href={link}><button className={styles.link}>
             SEE IT IN ACTION{" "}
           </button></a> : null}
+          </div>
         </div>
         <Image fluid={img} className={styles.image} />
         <div className={styles.content}>

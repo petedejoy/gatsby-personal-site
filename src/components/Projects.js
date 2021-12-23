@@ -29,12 +29,9 @@ const Projects = ({ projects }) => {
         <Link to={`/projects/${projectInfo.slug}`}>
           <Image fluid={projectInfo.image.childImageSharp.fluid} />
           <div className={styles.overlay}>
-            <div className={styles.text}>
+            <h2 className={styles.text}>
                 {projectInfo.title}
-            </div>
-            {/* <div className={styles.subtext}>
-              {projectInfo.description}
-            </div> */}
+            </h2>
           </div>
         </Link>
       </div>)

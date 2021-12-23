@@ -32,10 +32,10 @@ const Music = ({ children }) => {
         <meta name="twitter:card" content='summary_large_image' />
       </Helmet>
       <div>
-        <h1 className={styles.intro}>Some of my tunes.</h1>
-        <h3 className={styles.subtitle}>
+        <h1 className="intro">Some of my tunes.</h1>
+        <p className={styles.subtitle}>
           I'm a bedroom guitarist and aspiring vintage guitar collector. In my free time, I make Instagram videos.
-      </h3>
+      </p>
       </div>
       <img src={guitars} className={styles.guitars} alt="Guitars" />
       <hr />

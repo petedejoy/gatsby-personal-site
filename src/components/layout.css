@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +24,7 @@
 body {
   background: var(--mainWhite);
   font-size: 1.5rem;
-  font-family: baskerville-urw, serif;
+  font-family: 'Cardo', serif;
   text-align: left;
 }
 
@@ -33,40 +35,50 @@ text {
 tspan {
   background: var(--mainWhite);
   font-size: 1rem;
-  font-family: baskerville-urw, serif;
+  font-family: "Cardo", serif;
   text-align: left;
 }
 
+span {
+  font: 14px/24px "Cardo", serif;
+  line-height: 1.7em;
+  letter-spacing: .025em;
+  -webkit-font-smoothing: antialiased;
+}
+
 h1 {
-  font: 30px/24px "baskerville-urw", serif;
-  font-weight:300;
-  padding-top: 2rem;
+  font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
+  font-weight:500;
   padding-bottom: 2rem;
 }
 
 h2 {
-  font: 26px/24px "baskerville-urw", sans-serif;
-  font-weight: 600;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: .05em;
+  font-weight: 450;
+  margin: 2.5rem 0 1.5rem 0;
 }
 
 h3 {
-  font: 20px/24px "baskerville-urw", sans-serif;
-  font-weight: 600;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: .05em;
+  margin: 2rem 0 1rem 0;
 }
 
 h4 {
-  font: 20px/24px "baskerville-urw", sans-serif;
+  font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
   font-weight: 500;
 }
 
 p {
-  font: 18px/24px "baskerville-urw", serif;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
+  font: 18px/24px "Cardo", serif;
+  line-height: 1.7em;
+  letter-spacing: .01em;
+  -webkit-font-smoothing: antialiased;
+  margin: 1.2rem 0;
 }
 
 figcaption {
@@ -77,14 +89,23 @@ figcaption {
 }
 
 ol {
-  font: 17px/24px "baskerville-urw", serif;
-  line-height: 1.5;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  width: 85%;
-  height: 85%;
+  font: 18px/24px "Cardo", serif;
+  line-height: 1.7em;
+  letter-spacing: .01em;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: auto;
+}
+
+ul {
+  font: 18px/24px "Cardo", serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.7em;
+  letter-spacing: .01em;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin: auto;
 }
 
@@ -109,7 +130,7 @@ table, th, td {
   border: 1px solid black;
   background: var(--mainWhite);
   font-size: 1.2rem;
-  font-family: calluna, serif;
+  font-family: "Cardo", serif;
   text-align: center;
   border-collapse: collapse;
   padding: .5rem;
@@ -117,14 +138,15 @@ table, th, td {
 
 blockquote {
   margin: 1rem 0;
-  padding: 1.5rem 2rem 0.15rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   border-left: 5px solid var(--darkBlue);
   background-color: var(--mainGrey);
+  border-radius: 15px;
+  margin: 2rem 0 2rem 0;
 }
 
 blockquote > blockquote {
   margin: 1rem 0;
-  padding: 1.5rem 1rem 0.15rem 2rem;
   border-left: 5px solid var(--darkerBlue);
   background-color: var(--mainGreyDark);
 }
@@ -139,10 +161,10 @@ blockquote > blockquote {
 .intro {
   color: var(--mainBlack);
   text-decoration: none;
-  font-family: baskerville-urw, serif;
+  font-family: "Cardo", serif;
   font-weight: 200 !important;
   font-style: normal;
-  font-size: 48px;
+  font-size: 40px;
   letter-spacing: .03em;
   line-height: 1.4em;
   text-transform: none;

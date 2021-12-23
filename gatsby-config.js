@@ -10,18 +10,18 @@ module.exports = {
         name: "home",
         link: "/",
       },
-      {
-        name: "about",
-        link: "/about",
-      },
-      {
-        name: "projects",
-        link: "/projects",
-      },
-      {
-        name: "music",
-        link: "/music",
-      },
+      // {
+      //   name: "about",
+      //   link: "/about",
+      // },
+      // {
+      //   name: "projects",
+      //   link: "/projects",
+      // },
+      // {
+      //   name: "music",
+      //   link: "/music",
+      // },
       {
         name: "writing",
         link: "/writing",

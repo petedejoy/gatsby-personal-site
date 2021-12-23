@@ -65,10 +65,10 @@ h1 {
 .intro {
   color: var(--mainBlack);
   text-decoration: none;
-  font-family: baskerville-urw, serif;
-  font-weight: 200 !important;
+  font-family: "Cardo", serif;
+  font-weight: 200;
   font-style: normal;
-  font-size: 48px;
+  font-size: 40px;
   letter-spacing: .03em;
   line-height: 1.4em;
   text-transform: none;

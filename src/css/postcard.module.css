@@ -27,25 +27,25 @@
 .info h2 {
   text-transform: capitalize;
   font: 24px/20px;
-  font-weight: 600;
+  font-weight: 400;
   padding-bottom: .5rem;
   display: inline-block;
   line-height: 2rem;
-  font-family: "baskerville-urw", serif;
+  font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
 }
 
 .info h6 {
   color: var(--darkGrey);
   padding-top: .5rem;
   text-align: center;
-  font: 18px/24px "baskerville-urw", serif;
+  font: 18px/24px "Cardo", serif;
 }
 
 
 .info p {
   padding-top: .5rem;
   text-align: center;
-  font: 18px/24px "baskerville-urw", serif;
+  font: 18px/24px "Cardo", serif;
 }
 
 /* Hacky way to align all buttons */
