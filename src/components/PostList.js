@@ -1,6 +1,5 @@
 import React from "react"
 import PostCard from "./PostCard"
-import MailingList from "./MailingList"
 import styles from "../css/postlist.module.css"
 import { Helmet } from "react-helmet"
 import writingMeta from "../images/writing-meta.png"
@@ -19,7 +18,6 @@ const PostList = ({ posts }) => {
         <meta name="twitter:card" content='summary_large_image' />
       </Helmet>
       <h1 className="intro">Technology, business, music, mental health, and everything in-between.</h1>
-      <MailingList/>
       <div className={styles.center}>
         {posts.map(({ node }, index) => {
           return <PostCard key={index} post={node} />
