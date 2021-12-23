@@ -28,15 +28,14 @@
   text-transform: capitalize;
   font: 24px/20px;
   font-weight: 400;
-  padding-bottom: .5rem;
   display: inline-block;
   line-height: 2rem;
   font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
 .info h6 {
   color: var(--darkGrey);
-  padding-top: .5rem;
   text-align: center;
   font: 18px/24px "Cardo", serif;
 }
