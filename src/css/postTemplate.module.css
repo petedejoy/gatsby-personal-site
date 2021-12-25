@@ -46,6 +46,12 @@
   margin: 2rem 0;
 }
 
+.content img {
+  border-radius: 8px;
+  box-shadow: .2rem .5rem 1rem .15rem var(--darkGrey);
+  margin: 1.5rem 0;
+}
+
 .chart {
   width: 750px;
   height: 400px;
