@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import homepic from "../images/homepic3.jpeg"
+import homepic from "../images/pk.jpg"
 import styles from "../css/about.module.css"
 import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
@@ -28,7 +28,9 @@ const About = ({ children }) => {
         early-stage startups.
       </h3> */}
       </div>
-      <img src={homepic} className={styles.image} alt="Acadia" />
+      <div className={styles.imageContainer}>
+        <img src={homepic} className={styles.image} alt="Acadia" />
+      </div>
       <div className={styles.social}>
           <SocialIcon
             url="https://github.com/petedejoy"

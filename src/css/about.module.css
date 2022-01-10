@@ -29,14 +29,19 @@ h1 {
   padding-bottom: 1rem;
 }
 
-.image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+.imageContainer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.image {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
 
 .hero {
   padding-top: 5rem;
