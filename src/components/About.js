@@ -29,7 +29,7 @@ const About = ({ children }) => {
       </h3> */}
       </div>
       <div className={styles.imageContainer}>
-        <img src={homepic} className={styles.image} alt="Acadia" />
+        <img src={homepic} className={styles.image} alt="A photo of me and my girlfriend" />
       </div>
       <div className={styles.social}>
           <SocialIcon
