@@ -3,5 +3,3 @@
 # Pete DeJoy's Personal Site
 
 Built from scratch in [Gatsby.js](https://gatsbyjs.org)
-
-Please contact me if you'd be interested in a templated version of this site to fork for your own use.
