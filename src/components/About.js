@@ -1,12 +1,11 @@
 import React, { Component } from "react"
-import homepic from "../images/pk.jpg"
+import homepic from "../images/home-image.jpg"
 import styles from "../css/about.module.css"
 import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { MDXRenderer } from "gatsby-mdx"
 import { useStaticQuery } from "gatsby"
 import { SocialIcon } from "react-social-icons"
-import headshot from "../images/headshot.png"
 
 const About = ({ children }) => {
   const getAbout = graphql`
