@@ -30,7 +30,7 @@ const About = ({ children }) => {
       <div className={styles.imageContainer}>
         <img src={homepic} className={styles.image} alt="A photo of me and my girlfriend" />
       </div>
-      <div className={styles.social}>
+      {/* <div className={styles.social}>
           <SocialIcon
             url="https://github.com/petedejoy"
             className={styles.icon}
@@ -46,7 +46,7 @@ const About = ({ children }) => {
             className={styles.icon}
             bgColor="3f3f3f"
           />
-        </div>
+        </div> */}
       <div className={styles.body} dangerouslySetInnerHTML={{ __html: body }} />
     </section>
   )

@@ -38,7 +38,7 @@ const layout = ({ children }) => (
           <meta name="twitter:card" content='summary_large_image' />
         </Helmet>
         <Header
-          menuLinks={data.site.siteMetadata.menuLinks}
+          // menuLinks={data.site.siteMetadata.menuLinks}
         />
         <div
           style={{

@@ -22,10 +22,10 @@ module.exports = {
       //   name: "music",
       //   link: "/music",
       // },
-      {
-        name: "writing",
-        link: "/writing",
-      }
+      // {
+      //   name: "writing",
+      //   link: "/writing",
+      // }
     ],
   },
   plugins: [

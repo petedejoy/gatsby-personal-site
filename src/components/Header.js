@@ -22,19 +22,19 @@ const Header = ({ menuLinks }) => (
               changeMenuOn="700px"
               largeMenuClassName={styles.largeMenu}
               smallMenuClassName={styles.smallMenu}
-              menu={
-                <ul>
-                {menuLinks.map(link => (
-                  <li
-                    key={link.name}
-                  >
-                    <Link activeClassName={styles.active} className={styles.items} to={link.link}>
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              }
+              // menu={
+              //   <ul>
+              //   {menuLinks.map(link => (
+              //     <li
+              //       key={link.name}
+              //     >
+              //       <Link activeClassName={styles.active} className={styles.items} to={link.link}>
+              //         {link.name}
+              //       </Link>
+              //     </li>
+              //   ))}
+              // </ul>
+              // }
             />
           </nav>
         </div>
