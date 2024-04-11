@@ -5,10 +5,10 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build && export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "gatsby clean && gatsby develop && export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "start": "gatsby clean && gatsby develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
