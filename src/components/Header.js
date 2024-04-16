@@ -16,7 +16,7 @@ const Header = ({ menuLinks }) => (
         </Link>
         <div>
           <nav>
-            <ResponsiveMenu
+            {/* <ResponsiveMenu
               menuOpenButton={<div><MdMenu/></div>}
               menuCloseButton={<div><MdClose /></div>}
               changeMenuOn="700px"
@@ -35,7 +35,7 @@ const Header = ({ menuLinks }) => (
               //   ))}
               // </ul>
               // }
-            />
+            /> */}
           </nav>
         </div>
       </div>
